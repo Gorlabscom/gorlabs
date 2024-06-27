@@ -1,6 +1,7 @@
-import { ContextMenu } from "@repo/ui/components/ui/context-menu";
+
 export default function NotFound() {
 
+  //TODO: Improve design
   return (
     <>
       <div className="pointer-events-none relative -mt-[56px] flex h-screen flex-col items-center justify-center gap-8 overflow-hidden [&>*]:pointer-events-auto">
