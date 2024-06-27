@@ -5,6 +5,7 @@
     "paths": {
       "@ui/*": ["./src/*"]
     },
+    "rootDir": "src",
     "outDir": "dist"
   },
   "include": ["src"],
