@@ -20,7 +20,7 @@
         "./src/themes/*"
       ],
       "components/*": [
-        "./src/components/*"
+        "./src/components/ui/*.tsx"
       ]
     }
   },
@@ -33,7 +33,7 @@
     "./postcss.config": "./postcss.config.mjs",
     "./tailwind.config": "./tailwind.config.ts",
     "./lib/*": "./src/lib/*.ts",
-    "./components/*": "./src/components/*"
+    "./components/*": "./src/components/ui/*.tsx"
   },
   "scripts": {
     "ui:add": "pnpm dlx shadcn-ui@latest add",
