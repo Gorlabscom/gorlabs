@@ -1,6 +1,7 @@
 export {
   AlertCircle,
   AlertTriangle,
+  ArrowRight,
   ArrowDownNarrowWide,
   ArrowUp,
   ArrowUpNarrowWide,

@@ -18,7 +18,7 @@ export function ThemeButton() {
       {isMounted ? (
         <Button
           className="group rounded-lg p-2"
-          variant="outline"
+          variant="ghostNoHover"
           size="icon"
           title={
             currentTheme === "light"
@@ -39,7 +39,7 @@ export function ThemeButton() {
           )}
         </Button>
       ) : null}
-        
+
     </>
   );
 }
