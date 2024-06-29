@@ -1,10 +1,16 @@
-import { ThemeButton } from "@repo/ui/themes/theme-button";
+import HeroSection from "@/components/HeroSection";
+import AnimatedLogoCloud from "@/components/LogoCloud";
+import Pricing from "@/components/Pricing";
+import MaxWidthWrapper from "@repo/ui/components/max-width-wrapper";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>Landing SoOon!</div>
-      <ThemeButton />
+      <MaxWidthWrapper>
+        <HeroSection />
+        <AnimatedLogoCloud />
+        <Pricing />
+      </MaxWidthWrapper>
     </main>
   );
 }
