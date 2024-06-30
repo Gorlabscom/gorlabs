@@ -5,7 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "cleandep": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
+    "cleandep": "rm -rf node_modules && pnpm -r exec rm -rf node_modules .next .turbo",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "ui": "pnpm --filter @repo/ui",
     "ui:add": "pnpm --filter @repo/ui ui:add",

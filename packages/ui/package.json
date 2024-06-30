@@ -7,33 +7,33 @@
   "private": true,
   "typesVersions": {
     "*": {
-      "types": [
-        "./src/types.ts"
-      ],
-      "icons": [
-        "./src/icons.ts"
-      ],
       "assets/*": [
         "./src/assets/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "types": [
+        "./src/types.ts"
       ],
       "themes/*": [
         "./src/themes/*"
       ],
-      "components/*": [
-        "./src/components/ui/*.tsx"
+      "icons": [
+        "./src/icons.ts"
       ]
     }
   },
   "exports": {
-    ".": "./dist/index.mjs",
-    "./icons": "./src/icons.ts",
-    "./themes/*": "./src/themes/*.tsx",
+    ".": "./dist/index.ts",
     "./assets/*": "./src/assets/*",
-    "./globals.css": "./src/globals.css",
-    "./postcss.config": "./postcss.config.mjs",
-    "./tailwind.config": "./tailwind.config.ts",
+    "./components/*": "./src/components/*",
     "./lib/*": "./src/lib/*.ts",
-    "./components/*": "./src/components/ui/*.tsx"
+    "./themes/*": "./src/themes/*.tsx",
+    "./globals.css": "./src/globals.css",
+    "./icons": "./src/icons.ts",
+    "./postcss.config": "./postcss.config.mjs",
+    "./tailwind.config": "./tailwind.config.ts"
   },
   "scripts": {
     "ui:add": "pnpm dlx shadcn-ui@latest add",
@@ -82,7 +82,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
-    "@radix-ui/react-toast": "^1.1.5",
+    "@radix-ui/react-toast": "^1.2.1",
     "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-toggle-group": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.7",
