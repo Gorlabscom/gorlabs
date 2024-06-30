@@ -25,7 +25,7 @@
     }
   },
   "exports": {
-    ".": "./dist/index.ts",
+    ".": "./dist/index.mjs",
     "./assets/*": "./src/assets/*",
     "./components/*": "./src/components/*",
     "./lib/*": "./src/lib/*.ts",
