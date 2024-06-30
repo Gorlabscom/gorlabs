@@ -1,7 +1,7 @@
 'use client';
 import { useTheme } from 'next-themes';
 import { Moon, Sun } from '@repo/ui/icons';
-import { Button } from '@repo/ui/components/ui/button';
+import { Button } from '@repo/ui/components/ui/button.tsx';
 import { useEffect, useState } from 'react';
 
 export function ThemeButton() {
