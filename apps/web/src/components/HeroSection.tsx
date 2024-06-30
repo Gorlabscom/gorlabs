@@ -1,4 +1,4 @@
-import { BorderBeam } from "@repo/ui/components/ui/border-beam";
+import { BorderBeam } from "@repo/ui/components/ui/border-beam.tsx";
 import Image from "next/image";
 import Link from "next/link";
 

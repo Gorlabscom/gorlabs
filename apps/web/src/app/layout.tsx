@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navbar/index";
-import { Toaster } from "@repo/ui/components/ui/toaster";
 import { ThemeProvider } from "@repo/ui/themes/theme-provider";
 import { siteConfig } from "@/config/site";
-import Particles from "@repo/ui/components/ui/particles";
+import Particles from "@repo/ui/components/ui/particles.tsx";
 import Footer from "@/components/footer";
+import { Toaster } from "@repo/ui/components/ui/toaster.tsx";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-        <Navigation />
+          <Navigation />
           <main className="py-5">
             <div className="bg-border my-6 h-[1px] w-full shrink-0" />
             <div className="h-full">

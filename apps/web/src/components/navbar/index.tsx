@@ -1,7 +1,6 @@
 import ControlButtons from './control-buttons'
 import Logo from './logo'
 import NavigationMenuBar from './navmenu'
-import { ThemeButton } from '@repo/ui/themes/theme-button'
 
 const Navigation = () => {
   return (
@@ -15,7 +14,6 @@ const Navigation = () => {
                 <NavigationMenuBar />
               </div>
               <ControlButtons />
-              {/* <ThemeButton /> */}
             </>
           </div>
         </div>

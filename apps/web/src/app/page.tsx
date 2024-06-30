@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import AnimatedLogoCloud from "@/components/LogoCloud";
 import Pricing from "@/components/Pricing";
-import MaxWidthWrapper from "@repo/ui/components/max-width-wrapper";
+import MaxWidthWrapper from "@repo/ui/components/max-width-wrapper.tsx";
 
 export default function Home() {
   return (

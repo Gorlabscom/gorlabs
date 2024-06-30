@@ -10,8 +10,8 @@ const pricingPlans = [
   {
     name: 'Basic',
     description: 'Start with essential tools to boost your online presence.',
-    monthlyPrice: 69,
-    annualPrice: 49,
+    monthlyPrice: 4.99,
+    annualPrice: 1.99,
     link: '#',
     features: [
       'Limited AI usage',
@@ -25,8 +25,8 @@ const pricingPlans = [
     name: 'Professional',
     description:
       'Unlock enhanced features and premium content to supercharge your business.',
-    monthlyPrice: 299,
-    annualPrice: 199,
+    monthlyPrice: 79,
+    annualPrice: 49,
     link: '#',
     features: [
       'Everything in Basic plan',
@@ -41,8 +41,8 @@ const pricingPlans = [
     name: 'Premium',
     description:
       'Ultimate customization and dedicated support for enterprises.',
-    monthlyPrice: 2499,
-    annualPrice: 1666,
+    monthlyPrice: 249,
+    annualPrice: 166,
     link: '#',
     features: [
       'Everything in Professional plan',
