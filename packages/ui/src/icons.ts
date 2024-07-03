@@ -42,6 +42,7 @@ export {
   MessagesSquare,
   Minimize2,
   Moon,
+  Menu,
   MoreHorizontal,
   Pencil,
   PieChart,
