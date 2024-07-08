@@ -35,7 +35,7 @@ export default function Banner() {
             <p>{`Gorlabs is under construction and will be live soon!`}</p>
 
             <a
-              href="#"
+              href="https://github.com/Gorlabscom/gorlabs"
               className="ml-3 flex rounded-md bg-gray-900 dark:bg-[#f5f9ff] px-3 py-1 text-xs text-white dark:text-gray-900 shadow-sm hover:bg-gray-900/80"
             >
 
