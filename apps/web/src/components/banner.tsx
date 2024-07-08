@@ -32,11 +32,11 @@ export default function Banner() {
       >
         <div className="flex w-full items-center gap-x-6 bg-violet-500 px-6 py-3 sm:px-3.5 sm:before:flex-1">
           <div className="flex items-center text-sm font-medium leading-6 text-white">
-            <p>{`Gorlabs is will be live soon!`}</p>
+            <p>{`Gorlabs is under construction and will be live soon!`}</p>
 
             <a
               href="#"
-              className="ml-3 flex rounded-lg bg-gray-900 dark:bg-slate-100 px-3 py-1 text-xs text-white dark:text-gray-900 shadow-sm hover:bg-gray-900/80"
+              className="ml-3 flex rounded-md bg-gray-900 dark:bg-[#f5f9ff] px-3 py-1 text-xs text-white dark:text-gray-900 shadow-sm hover:bg-gray-900/80"
             >
 
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ export default function Banner() {
               </svg>
               <p className='ml-3'>
 
-              Contribute Now
+                Contribute Now
               </p>
             </a>
           </div>
