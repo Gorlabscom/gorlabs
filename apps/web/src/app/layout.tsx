@@ -8,6 +8,7 @@ import Particles from "@repo/ui/components/ui/particles.tsx";
 import Footer from "@/components/footer";
 import { Toaster } from "@repo/ui/components/ui/toaster.tsx";
 import Navbar from '@/components/Navbar';
+import Banner from '@/components/banner';
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -27,8 +28,8 @@ export default function RootLayout({
       <head>
       </head>
       <body className={inter.className}>
-
-      <Navbar />
+        <Banner />
+        <Navbar />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -36,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
 
-          <main className= "">
+          <main className="">
             <div className="h-full">
               <Particles
                 className="absolute fixed top-0 left-0 w-full h-full z-[-1] inset-0"
