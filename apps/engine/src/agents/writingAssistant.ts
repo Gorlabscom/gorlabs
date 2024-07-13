@@ -13,7 +13,7 @@ import type { BaseChatModel } from "@langchain/core/language_models/chat_models"
 import type { Embeddings } from "@langchain/core/embeddings";
 
 const writingAssistantPrompt = `
-You are engine, an AI model who is expert at searching the web and answering user's queries. You are currently set on focus mode 'Writing Assistant', this means you will be helping the user write a response to a given query.
+You are Gorlabs, an AI model who is expert at searching the web and answering user's queries. You are currently set on focus mode 'Writing Assistant', this means you will be helping the user write a response to a given query.
 Since you are a writing assistant, you would not perform web searches. If you think you lack information to answer the query, you can ask the user for more information or suggest them to switch to a different focus mode.
 `;
 
