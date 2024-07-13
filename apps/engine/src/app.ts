@@ -2,10 +2,10 @@ import express from "express";
 import http from "http";
 import cors from "cors";
 import routes from "./routes";
-// import { startWebSocketServer } from "./websocket";
-// import { getPort } from "./config";
+import { startWebSocketServer } from "./websocket";
+import { getPort } from "./config";
 
-// const port = getPort();
+const port = getPort();
 
 const app = express();
 const server = http.createServer(app);
@@ -20,12 +20,11 @@ app.use(express.json());
 app.use("/api", routes);
 
 app.get("/api", (_, res) => {
-  res.status(200).json({ message: "ok!" });
+  res.status(200).json({ status: "ok" });
 });
 
-server.listen(3000, () => {
-  console.log("Server is running on http://localhost:3000");
+server.listen(port, () => {
+  console.log(`API Server started on port : ${port}`);
 });
 
-
-// startWebSocketServer(server);
+startWebSocketServer(server);

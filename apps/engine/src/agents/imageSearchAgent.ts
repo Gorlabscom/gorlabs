@@ -5,10 +5,11 @@ import {
   RunnableMap,
   RunnableLambda,
 } from "@langchain/core/runnables";
+
 import formatChatHistoryAsString from "../utils/formatHistory";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { StringOutputParser } from "@langchain/core/output_parsers";
-import { searchSearxng } from "../core/searxng";
+import { searchSearxng } from "../lib/searxng";
 import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
 
 const imageSearchChainPrompt = `

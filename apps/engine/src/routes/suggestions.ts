@@ -1,5 +1,5 @@
 import express from "express";
-import { getChatModel, getChatModelProvider } from "./config";
+import { getChatModel, getChatModelProvider } from "../config";
 import { getAvailableProviders } from "../lib/providers";
 import { BaseChatModel } from "@langchain/core/language_models/chat_models";
 import { HumanMessage, AIMessage } from "@langchain/core/messages";

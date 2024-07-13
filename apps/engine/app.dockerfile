@@ -7,7 +7,7 @@ ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
 
 WORKDIR /home/engine
 
-COPY ui /home/engine/
+COPY ../frontend /home/engine/ui/
 
 RUN npm install
 RUN npm run build

@@ -1,6 +1,6 @@
 import express from "express";
 import { ChatOpenAI } from "@langchain/openai";
-import { getChatModel, getChatModelProvider, getOpenaiApiKey } from "./config";
+import { getChatModel, getChatModelProvider, getOpenaiApiKey } from "../config";
 import handleImageSearch from "../agents/imageSearchAgent";
 import { getAvailableProviders } from "../lib/providers";
 import { BaseChatModel } from "@langchain/core/language_models/chat_models";
