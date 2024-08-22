@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "framework": {
+    "name": "next",
+    "version": "14.2.6"
+  },
+  "rootDirectory": "apps/landing",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "output": {
+    "file": ".vercel/output"
+  }
+}
