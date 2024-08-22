@@ -1,0 +1,15 @@
+{
+  "extends": "@gorlabs/typescript-config/react-library.json",
+  "compilerOptions": {
+    "types": ["@testing-library/jest-dom", "jest"],
+    "allowUmdGlobalAccess": true,
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noUnusedLocals": true
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
