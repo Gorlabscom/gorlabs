@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './aos.css';
 * {
   padding: 0;
   margin: 0;
