@@ -1,0 +1,36 @@
+{
+  "name": "@gorlabs/landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gorlabs/hooks": "workspace:*",
+    "@gorlabs/ui": "workspace:*",
+    "@gorlabs/utils": "workspace:*",
+    "framer-motion": "^11.3.28",
+    "next": "^14.2.4",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-wrap-balancer": "^1.1.1",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@gorlabs/eslint-config": "workspace:*",
+    "@gorlabs/typescript-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0-rc.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5"
+  }
+}
