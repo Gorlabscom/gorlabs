@@ -8,7 +8,8 @@
     "test": "turbo test",
     "typecheck": "turbo typecheck",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "turbo deploy"
   },
   "lint-staged": {
     "apps/**/src/**/*.{js,ts,jsx,tsx}": [
@@ -22,6 +23,8 @@
     ]
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.2",
+    "@cloudflare/workers-types": "^4.20240821.1",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "autoprefixer": "^10.4.19",
@@ -31,7 +34,8 @@
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.4",
     "turbo": "^2.0.4",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vercel": "^37.0.0"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
