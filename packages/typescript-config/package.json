@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "@gorlabs/typescript-config",
+=======
+  "name": "@repo/typescript-config",
+>>>>>>> old-history
   "version": "0.0.0",
   "private": true,
   "license": "MIT",

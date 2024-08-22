@@ -5,6 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+<<<<<<< HEAD
     "test": "turbo test",
     "typecheck": "turbo typecheck",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -38,10 +39,30 @@
     "vercel": "^37.0.0"
   },
   "packageManager": "pnpm@8.15.6",
+=======
+    "cleandep": "rm -rf node_modules && pnpm -r exec rm -rf node_modules .next .turbo",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "ui": "pnpm --filter @repo/ui",
+    "ui:add": "pnpm --filter @repo/ui ui:add",
+    "clean": "turbo clean && rm -rf node_modules && rm -rf .turbo"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.4",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@9.2.0",
+>>>>>>> old-history
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
+<<<<<<< HEAD
     "tailwind-variants": "^0.2.1"
+=======
+    "lucide-react": "^0.395.0"
+>>>>>>> old-history
   }
 }

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "extends": "@gorlabs/typescript-config/react-library.json",
   "compilerOptions": {
     "types": ["@testing-library/jest-dom", "jest"],
@@ -10,4 +11,12 @@
   },
   "include": ["src", "turbo"],
   "exclude": ["node_modules", "dist"]
+=======
+  "extends": "@repo/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src", "turbo"],
+  "exclude": ["node_modules", "dist", "tailwind.config.ts"]
+>>>>>>> old-history
 }

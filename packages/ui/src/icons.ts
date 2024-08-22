@@ -15,7 +15,10 @@ export {
   CheckCheck,
   CheckCircle,
   CheckCircle2,
+<<<<<<< HEAD
   CheckIcon,
+=======
+>>>>>>> old-history
   ChevronDown,
   ChevronLeft,
   ChevronRight,
@@ -27,12 +30,18 @@ export {
   Compass,
   Copy,
   Diamond,
+<<<<<<< HEAD
   DollarSign,
+=======
+>>>>>>> old-history
   ExternalLink,
   Flag,
   GitBranch,
   Github,
+<<<<<<< HEAD
   Heart,
+=======
+>>>>>>> old-history
   InfoIcon,
   Loader,
   Loader2,
@@ -44,7 +53,10 @@ export {
   MessageCircle,
   MessagesSquare,
   Minimize2,
+<<<<<<< HEAD
   Minus,
+=======
+>>>>>>> old-history
   Moon,
   Menu,
   MoreHorizontal,

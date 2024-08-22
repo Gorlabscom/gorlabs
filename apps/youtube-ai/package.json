@@ -1,0 +1,49 @@
+{
+  "name": "youtube-ai",
+  "displayName": "Youtube ai",
+  "version": "0.1.0",
+  "description": "Youtube AI gives you the power of OpenAI's ChatGPT on all your favourite Youtube videos.",
+  "author": "Gaurav Mandal (gauravmandall), gaurav@gorlabs.com",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@plasmohq/messaging": "^0.6.2",
+    "@radix-ui/react-collapsible": "^1.0.3",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "openai": "^4.52.7",
+    "plasmo": "0.88.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-textarea-autosize": "^8.5.3",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.258",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.1.0",
+    "prettier": "3.2.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "permissions": [
+      "tabs"
+    ]
+  }
+}

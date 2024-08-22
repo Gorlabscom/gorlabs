@@ -3,18 +3,27 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
+<<<<<<< HEAD
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+=======
+      "inputs": ["$TURBO_DEFAULT$", "dist/**", ".env", ".env.*"],
+      "outputs": [".next/**", "!.next/cache/**"],
+      "outputLogs": "errors-only"
+>>>>>>> old-history
     },
     "lint": {
       "dependsOn": ["^lint"]
     },
+<<<<<<< HEAD
     "typecheck": {
       "outputs": []
     },
     "test": {
       "outputs": ["coverage/**"]
     },
+=======
+>>>>>>> old-history
     "dev": {
       "cache": false,
       "persistent": true
