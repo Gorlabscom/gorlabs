@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "extends": "@gorlabs/typescript-config/react-library.json",
   "compilerOptions": {
     "types": ["@testing-library/jest-dom", "jest"],
@@ -12,17 +11,5 @@
   },
 
   "include": ["src/**/*"],
-=======
-  "extends": "@repo/typescript-config/react-library.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@ui/*": ["./src/*"]
-    },
-    "rootDir": "src",
-    "outDir": "dist"
-  },
-  "include": ["src"],
->>>>>>> old-history
   "exclude": ["node_modules", "dist"]
 }
