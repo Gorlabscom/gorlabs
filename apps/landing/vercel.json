@@ -6,7 +6,6 @@
     "name": "next",
     "version": "14.2.6"
   },
-  "rootDirectory": "apps/landing",
   "builds": [
     {
       "src": "package.json",
