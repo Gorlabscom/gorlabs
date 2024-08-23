@@ -4,15 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --output public",
-    "vercel-build": "pnpm -w run prepare && pnpm run build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "test": "echo 'all app:web tests passed!'",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "npm run pages:build && wrangler pages dev",
-    "deploy": "npm run pages:build && wrangler pages deploy"
+    "cf-typegen": "pnpx wrangler types --env-interface CloudflareEnv env.d.ts",
+    "pages:build": "pnpx @cloudflare/next-on-pages",
+    "preview": "pnpm run pages:build && pnpx wrangler pages dev",
+    "deploy": "pnpm run pages:build && pnpx wrangler pages deploy"
   },
   "dependencies": {
     "@gorlabs/hooks": "workspace:*",
