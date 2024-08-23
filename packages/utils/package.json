@@ -1,6 +1,8 @@
 {
   "name": "@gorlabs/utils",
   "version": "0.0.0",
+  "main": "./helpers/index.ts",
+  "types": "./helpers/index.ts",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
@@ -8,9 +10,11 @@
     "test:watch": "pnpm run test --watch"
   },
   "exports": {
-    "./helpers": {
-      "types": "./src/helpers/index.ts",
-      "default": "./dist/helpers/index.js"
+    ".": {
+      "import": "./src/helpers/index.ts"
+    },
+    "./src": {
+      "import": "./src/helpers/index.ts"
     }
   },
   "devDependencies": {
