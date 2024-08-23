@@ -1,4 +1,4 @@
-import { cn } from '@gorlabs/utils/helpers';
+import { cn } from '@gorlabs/utils';
 import { ReactNode } from 'react';
 
 export const MaxWidthWrapper = ({

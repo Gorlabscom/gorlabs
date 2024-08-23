@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@gorlabs/utils/helpers';
+import { cn } from '@gorlabs/utils';
 import { motion } from 'framer-motion';
 
 interface Props {

@@ -4,7 +4,7 @@ import { CheckIcon, DollarSign } from '@gorlabs/ui/icons';
 // import { HighlightGroup, HighlighterItem } from '@/components/Highlighter';
 import Particles from '@/components/Particles/Particles';
 import React, { useState } from 'react';
-import { cn } from '@gorlabs/utils/helpers';
+import { cn } from '@gorlabs/utils';
 import Link from 'next/link';
 import { Container, SectionBadge } from '@gorlabs/ui';
 

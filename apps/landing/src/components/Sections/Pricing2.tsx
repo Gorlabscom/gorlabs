@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Particles from '@/components/Particles/Particles';
 import { ArrowRight, Check } from '@gorlabs/ui/icons';
 // import { useMemo } from 'react';
-import { cn } from '@gorlabs/utils/helpers';
+import { cn } from '@gorlabs/utils';
 import { SectionBadge } from '@gorlabs/ui';
 
 const tiers = [

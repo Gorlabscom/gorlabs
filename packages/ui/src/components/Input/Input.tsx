@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { PatternFormat, PatternFormatProps } from 'react-number-format';
 import { tv } from 'tailwind-variants';
-import { cn } from '@gorlabs/utils/helpers';
+import { cn } from '@gorlabs/utils';
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
 

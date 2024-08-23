@@ -2,7 +2,7 @@ import { BorderBeam } from '@gorlabs/ui';
 import Image from 'next/image';
 import Link from 'next/link';
 import gradientStyle from '@/styles/gradient.module.css';
-import { cn } from '@gorlabs/utils/helpers';
+import { cn } from '@gorlabs/utils';
 import ShinyRotatingBorderButtonVariant1 from '../Chip/chip';
 import { Container } from '@gorlabs/ui';
 
