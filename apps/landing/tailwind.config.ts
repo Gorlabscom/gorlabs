@@ -6,9 +6,8 @@ const config = {
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
-    './src/**/*.{html,js,ts,jsx,tsx}',
-    './.storybook/preview.tsx',
-    '../../../packages/ui/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+    '../../packages/ui/src/**/*.{ts,tsx}',
   ],
   prefix: '',
   theme: {
