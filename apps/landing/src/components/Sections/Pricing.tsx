@@ -74,7 +74,7 @@ export default function Pricing() {
   }
 
   return (
-    <section id='plans'>
+    <section id="plans">
       <Container>
         <div className="relative">
           <div
@@ -89,7 +89,7 @@ export default function Pricing() {
             <div className="py-12 md:py-20">
               <div className="max-w-3xl pb-12 mx-auto text-center md:pb-20">
                 <SectionBadge title="Pricing plans" />
-                <h2 className="pb-4 text-4xl mt-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r dark:from-zinc-200/60 dark:via-zinc-200 dark:to-zinc-200/60 from-zinc-600/60 via-zinc-900 to-zinc-600/60">
+                <h2 className="pb-4 text-4xl mt-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r dark:from-zinc-200/60 dark:via-zinc-200 dark:to-zinc-200/60 from-zinc-950/70 via-zinc-950 to-zinc-950/70 group">
                   Fair pricing, unfair advantage.
                 </h2>
                 <p className="text-lg text-zinc-400">

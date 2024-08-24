@@ -23,7 +23,7 @@ const Newsletter = () => {
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link> */}
                 <Link
-                  className="mt-16 justify-center flex items-center whitespace-nowrap transition duration-150 ease-in-out font-medium rounded px-4 py-1.5  dark:text-zinc-900 bg-gradient-to-r dark:from-white/80 dark:via-white dark:to-white/80 hover:bg-white from-zinc-900/80 via-zinc-900 to-zinc-900/80 group"
+                  className="mt-16 justify-center flex items-center whitespace-nowrap transition duration-150 ease-in-out font-medium rounded px-4 py-1.5 text-white dark:text-zinc-900 bg-gradient-to-r dark:from-white/80 dark:via-white dark:to-white/80 hover:bg-white from-zinc-950/70 via-zinc-950 to-zinc-950/70 group"
                   href="/signin"
                 >
                   Get Started for free{' '}
