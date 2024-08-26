@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: 'gorlabs',
+  siteDomain: 'gorlabs.com',
   url: 'https://gorlabs.com',
   ogImage: 'https://ui.shadcn.com/og.jpg',
   description: 'Making the web more beautiful, accessible, and fast.',

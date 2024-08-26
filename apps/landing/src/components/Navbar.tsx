@@ -6,6 +6,7 @@ import Image from 'next/image';
 import logo from '@gorlabs/ui/assets/logo.svg';
 // import { ThemeButton } from '@/themes/theme-button';
 import ThemeToggler from '@/themes/theme-button';
+import { siteConfig } from '@/config/site';
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -65,7 +66,7 @@ const Navbar = () => {
 export default Navbar;
 
 const navItems = [
-  { label: 'Pricing', href: '#' },
-  { label: 'About', href: '#' },
-  { label: 'Documentation', href: '#' },
+  { label: 'Pricing', href: '/#plans' },
+  { label: 'About', href: '/about' },
+  { label: 'Documentation', href: `https://docs.${siteConfig.siteDomain}` },
 ];
