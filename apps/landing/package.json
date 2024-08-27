@@ -14,6 +14,7 @@
     "deploy": "pnpm run pages:build && pnpx wrangler pages deploy"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.8",
     "@gorlabs/hooks": "workspace:*",
     "@gorlabs/ui": "workspace:*",
     "@gorlabs/utils": "workspace:*",

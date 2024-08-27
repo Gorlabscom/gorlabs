@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { ThemeProvider } from '@gorlabs/ui';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import '@/styles/globals.css';
 import Particles from '@/components/Particles/Particles';
@@ -18,8 +18,62 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: {
+    default: siteConfig.name,
+    template: siteConfig.titleTemplate,
+  },
   description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [
+    {
+      name: siteConfig.creator.name,
+      url: siteConfig.creator.url,
+    },
+  ],
+  creator: siteConfig.creator.name,
+
+  icons: {
+    icon: '/icons/favicon.ico',
+    shortcut: '/icons/favicon-16x16.png',
+    apple: '/icons/apple-touch-icon.png',
+  },
+
+  // PWA
+  applicationName: siteConfig.name,
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: siteConfig.name,
+    startupImage: siteConfig.ogImage,
+  },
+  formatDetection: {
+    telephone: false,
+  },
+
+  // Open Graph
+  openGraph: {
+    type: 'website',
+    siteName: siteConfig.name,
+    title: {
+      default: siteConfig.name,
+      template: siteConfig.titleTemplate,
+    },
+    description: siteConfig.description,
+  },
+  // Twitter
+  twitter: {
+    card: 'summary',
+    title: {
+      default: siteConfig.name,
+      template: siteConfig.titleTemplate,
+    },
+    description: siteConfig.description,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#7563cf',
 };
 
 export default function RootLayout({
