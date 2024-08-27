@@ -1,7 +1,12 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS",
+    "NEXT_PUBLIC_MICROSOFT_CLARITY"
+  ],
   "tasks": {
     "build": {
+      "env": ["NEXT_PUBLIC_*"],
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
