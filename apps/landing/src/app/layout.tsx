@@ -6,6 +6,7 @@ import localFont from 'next/font/local';
 import '@/styles/globals.css';
 import Particles from '@/components/Particles/Particles';
 import { siteConfig } from '@/config/site';
+import Metrics from '@/metrics';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} dark:bg-zinc-900`}
       >
+        <Metrics />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
           {/* <div className="h-full"> */}
