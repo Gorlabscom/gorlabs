@@ -172,6 +172,7 @@ export const Header = () => {
           >
             <MenuIcon />
           </Button> */}
+          <ThemeToggler />
         </div>
       </div>
     </header>
