@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { tv, type VariantProps } from 'tailwind-variants';
-import { Loader2 } from 'lucide-react';
-import { focusRing } from '@gorlabs/utils';
 import { cn } from '@gorlabs/utils';
+// import { Loader2 } from 'lucide-react';
+import { focusRing } from '@gorlabs/utils';
 
 const buttonVariants = tv(
   {
@@ -77,53 +77,17 @@ interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
-  isLoading?: boolean;
-  prefix?: React.ReactNode;
-  suffix?: React.ReactNode;
-  href?: string; // Added href prop
 }
 
-const Button = React.forwardRef<
-  HTMLButtonElement & HTMLAnchorElement,
-  ButtonProps
->(
-  (
-    {
-      className,
-      variant,
-      size,
-      shape,
-      isLoading,
-      prefix,
-      suffix,
-      asChild,
-      href, // Destructure href prop
-      children,
-      ...props
-    },
-    ref
-  ) => {
-    const Component = asChild ? Slot : href ? 'a' : 'button'; // Render 'a' if href is present
-
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant, size, shape, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : 'button';
     return (
-      <Component
-        ref={ref}
+      <Comp
         className={cn(buttonVariants({ variant, size, shape, className }))}
-        href={href} // Add href if it's an anchor
-        target={href ? props.target : undefined} // Set target only for anchor
-        disabled={isLoading || props.disabled}
+        ref={ref}
         {...props}
-      >
-        {isLoading ? (
-          <Loader2 className="animate-spin" aria-label="loading" />
-        ) : (
-          <>
-            {prefix && <span className="mr-2">{prefix}</span>}
-            {children}
-            {suffix && <span className="ml-2">{suffix}</span>}
-          </>
-        )}
-      </Component>
+      />
     );
   }
 );
