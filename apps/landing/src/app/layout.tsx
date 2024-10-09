@@ -7,6 +7,7 @@ import '@/styles/globals.css';
 import Particles from '@/components/Particles/Particles';
 import { siteConfig } from '@/config/site';
 import Metrics from '@/metrics';
+import { Header } from '@/components/Header';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -88,7 +89,8 @@ export default function RootLayout({
       >
         <Metrics />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <Navbar />
+          {/* <Navbar /> */}
+          <Header />
           {/* <div className="h-full"> */}
           <Particles
             className="absolute top-0 left-0 w-full h-full z-[-1] inset-0"
