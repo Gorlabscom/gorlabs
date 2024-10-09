@@ -1,6 +1,8 @@
 export const siteConfig = {
   name: 'gorlabs',
+  ogName: 'Gorlabs',
   siteDomain: 'gorlabs.com',
+  logo: '/icons/logo.svg',
   titleTemplate: '%s | Gorlabs',
   url: 'https://gorlabs.com',
   ogImage: '/icons/krsna.png',

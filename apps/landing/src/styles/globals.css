@@ -99,6 +99,19 @@ B (255 */
       0.9915 68.74%,
       1 100%
     );
+        --color-black: 0 0 0%;
+    --color-white: 0 0 100%;
+
+    --color-neutral-100: 0 0% 98%; /* Background layers (default bg) */
+    --color-neutral-200: 0 0% 94%; /* Background layers (Bg secondary/muted) */ /* Decorative border */
+    --color-neutral-300: 0 0% 90%; /* Decorative border */
+    --color-neutral-400: 0 0% 85%; /* Field border */
+    --color-neutral-500: 0 0% 80%; /* Disabled Text */
+    --color-neutral-600: 0 0% 40%; /* control border (switch/checkbox/radio) */
+    --color-neutral-700: 0 0% 35%; /* Text secondary (muted) */
+    --color-neutral-800: 0 0% 28%; /* Text */
+    --color-neutral-900: 0 0% 16%; /* Heading Text */
+    --color-neutral-1000: 0 0% 12%;
     --background: 271 36% 98%;
     --foreground: 271 5% 10%;
     --card: 271 36% 98%;
@@ -183,6 +196,9 @@ B (255 */
 @layer base {
   * {
     @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
   }
   body {
     @apply bg-background text-foreground font-sans;

@@ -90,6 +90,9 @@ importers:
       framer-motion:
         specifier: ^11.3.29
         version: 11.11.1(react-dom@18.3.1)(react@18.3.1)
+      lucide-react:
+        specifier: ^0.400.0
+        version: 0.400.0(react@18.3.1)
       next:
         specifier: ^14.2.6
         version: 14.2.14(@babel/core@7.25.7)(react-dom@18.3.1)(react@18.3.1)
@@ -102,6 +105,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      react-icons:
+        specifier: ^5.3.0
+        version: 5.3.0(react@18.3.1)
       react-wrap-balancer:
         specifier: ^1.1.1
         version: 1.1.1(react@18.3.1)
@@ -15443,6 +15449,14 @@ packages:
       react-dom: 18.3.1(react@18.3.1)
       react-is: 18.1.0
     dev: true
+
+  /react-icons@5.3.0(react@18.3.1):
+    resolution: {integrity: sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.3.1
+    dev: false
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
