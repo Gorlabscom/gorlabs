@@ -11,3 +11,12 @@ export const focusRingGroup = tv({
 export const focusInput = tv({
   base: 'ring-0 focus-within:ring-border-focus focus-within:ring-2',
 });
+
+export const hasErrorInput = [
+  // base
+  'ring-2',
+  // border color
+  'border-red-500 dark:border-red-700',
+  // ring color
+  'ring-red-200 dark:ring-red-700/30',
+];
