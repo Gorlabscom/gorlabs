@@ -95,24 +95,26 @@ export const Header = () => {
             tabIndex={scrolled ? -1 : undefined}
           >
             <Button
-              href={siteConfig.links.github}
-              // target="_blank"
               size="sm"
               shape="square"
               variant="quiet"
               aria-label="github"
+              asChild
             >
-              <SiGithub />
+              <Link href={siteConfig.links.github} target="_blank">
+                <SiGithub />
+              </Link>
             </Button>
             <Button
-              href={siteConfig.links.twitter}
-              // target="_blank"
               size="sm"
               shape="square"
               variant="quiet"
               aria-label="twitter"
+              asChild
             >
-              <SiX />
+              <Link href={siteConfig.links.twitter} target="_blank">
+                <SiX />
+              </Link>
             </Button>
             <ThemeToggler />
           </div>
@@ -175,7 +177,6 @@ export const Header = () => {
     </header>
   );
 };
-
 
 // bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900
 
