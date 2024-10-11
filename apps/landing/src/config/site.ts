@@ -35,7 +35,8 @@ export const siteConfig = {
   ],
   description: 'Making the web more beautiful, accessible, and fast.',
   links: {
-    twitter: 'https://twitter.com/gauravmandall',
+    // twitter: 'https://twitter.com/gauravmandall',
+    x: 'https://x.com/gauravmandall',
     github: 'https://github.com/gorlabscom/gorlabs',
   },
   creator: {

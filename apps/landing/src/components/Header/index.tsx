@@ -112,7 +112,7 @@ export const Header = () => {
               aria-label="twitter"
               asChild
             >
-              <Link href={siteConfig.links.twitter} target="_blank">
+              <Link href={siteConfig.links.x} target="_blank">
                 <SiX />
               </Link>
             </Button>
@@ -182,6 +182,7 @@ export const Header = () => {
 // bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900
 
 interface NavItem {
+  id: string;
   label: string;
   href?: string;
 }
@@ -206,7 +207,7 @@ const Nav = (props: NavProps) => {
         (item, index) =>
           item.href && (
             <Link
-              key={index}
+              key={item.id || item.href} // Use a unique identifier instead of index
               className={cn(
                 focusRing(),
                 'flex items-center justify-center gap-2 rounded px-4 py-1 text-sm font-medium text-fg/60 transition-colors hover:text-fg',
@@ -236,7 +237,7 @@ const Nav = (props: NavProps) => {
 };
 
 const navItems = [
-  { label: 'Pricing', href: '/#plans' },
-  { label: 'About', href: '/about' },
-  { label: 'Documentation', href: `https://docs.${siteConfig.siteDomain}` },
+  {id:1, label: 'Pricing', href: '/#plans' },
+  {id:2, label: 'About', href: '/about' },
+  {id:3, label: 'Documentation', href: `https://docs.${siteConfig.siteDomain}` },
 ];
