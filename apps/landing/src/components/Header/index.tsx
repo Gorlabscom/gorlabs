@@ -182,7 +182,7 @@ export const Header = () => {
 // bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900
 
 interface NavItem {
-  id: string;
+  id: number | string;
   label: string;
   href?: string;
 }
