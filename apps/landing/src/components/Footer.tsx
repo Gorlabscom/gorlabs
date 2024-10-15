@@ -29,7 +29,7 @@ const Footer = () => {
               <Heart className="w-3.5 h-3.5 ml-1 fill-purple-600 text-primary" />{' '}
               &nbsp;by&nbsp;
               <Link
-                href={`https://linkedin.com/gauravmandall`}
+                href={"https://linkedin.com/gauravmandall"}
                 className="hover:text-cyan-300"
               >
                 Gaurav Mandal
