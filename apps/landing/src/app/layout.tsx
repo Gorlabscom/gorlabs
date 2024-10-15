@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
+// import Navbar from '@/components/Navbar';
 import { ThemeProvider } from '@gorlabs/ui';
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
@@ -91,7 +91,6 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {/* <Navbar /> */}
           <Header />
-          {/* <div className="h-full"> */}
           <Particles
             className="absolute top-0 left-0 w-full h-full z-[-1] inset-0"
             quantity={400}

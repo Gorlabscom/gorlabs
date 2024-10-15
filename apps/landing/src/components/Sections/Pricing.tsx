@@ -11,37 +11,39 @@ import { Container, SectionBadge } from '@gorlabs/ui';
 type BilledType = 'monthly' | 'annually';
 const pricingData: OfferCardProps[] = [
   {
-    title: 'Starter',
-    description: 'For small teams',
+    title: 'Solo',
+    description: 'For indie hackers',
     price: {
       monthly: 0,
       annually: 0,
     },
+    noCardRequired: true,
     features: [
-      'Limited AI usage',
+      'Limited Access',
       'Access free tools',
       'Built-in AI Keyword Research',
-      'Target latest AI products',
+      'Target latest products',
       'Access to 100+ free tools',
     ],
     infos: ['1 user', 'Community support'],
     link: '/starter',
   },
   {
-    title: 'Professional',
-    description: 'For medium-sized businesses',
+    title: 'Teams',
+    description: 'For small teams',
     price: {
       monthly: 4.99,
       annually: 1.99,
     },
+    noCardRequired: false,
     features: [
       'Everything in Basic plan',
       'Get 25 premium AI Tools',
-      'AI Agent',
+      'Early access of new tools',
       'Professional license',
       'Premium support',
     ],
-    infos: ['4 users', 'Phone and email support'],
+    infos: ['4 users', 'Email & slack support'],
     link: '/pro',
     isBestValue: true,
   },
@@ -52,11 +54,12 @@ const pricingData: OfferCardProps[] = [
       monthly: 79,
       annually: 49,
     },
+    noCardRequired: false,
     features: [
       'Everything in Professional plan',
-      'Get Unlimited premium AI Tools',
+      'Get Unlimited premium Tools',
       // 'Add your own AI Model key',
-      'Self-hosted AI Tools',
+      'Self-hosted Tools',
       'Premium license',
       'Premium support & training sessions',
     ],
@@ -89,12 +92,18 @@ export default function Pricing() {
             <div className="py-12 md:py-20">
               <div className="max-w-3xl pb-12 mx-auto text-center md:pb-20">
                 <SectionBadge title="Pricing plans" />
-                <h2 className="pb-4 text-4xl mt-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r dark:from-zinc-200/60 dark:via-zinc-200 dark:to-zinc-200/60 from-zinc-950/70 via-zinc-950 to-zinc-950/70 group">
+                <h2 className="mb-4 mt-4 font-light text-6xl tracking-tighter">
+                  Fair pricing, unfair advantage.
+                </h2>
+                <p className="text-lg text-zinc-400 tracking-tight">
+                  Invite your whole team, we don't do seat-based pricing here.
+                </p>
+                {/* <h2 className="pb-4 text-4xl mt-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r dark:from-zinc-200/60 dark:via-zinc-200 dark:to-zinc-200/60 from-zinc-950/70 via-zinc-950 to-zinc-950/70 group">
                   Fair pricing, unfair advantage.
                 </h2>
                 <p className="text-lg text-zinc-400">
                   Invite your whole team, we don't do seat-based pricing here.
-                </p>
+                </p> */}
               </div>
               <div className="flex flex-col gap-4 items-center">
                 <SelectOfferTab
@@ -119,7 +128,7 @@ export default function Pricing() {
                     </div>
                   ))}
                   <div
-                    className="h-full md:col-span-6 lg:col-span-12  group/item"
+                    className="h-full md:col-span-6 lg:col-span-12 border border-neutral-500/50 rounded-xl group/item"
                     data-aos="fade-down"
                   >
                     {/* <HighlighterItem> */}
@@ -139,17 +148,25 @@ export default function Pricing() {
                         {/* Text */}
 
                         <div className="p-8">
-                          <h3 className="text-lg font-semibold leading-8">
+                          <div className="text-5xl font-semibold dark:text-neutral-200 text-zinc-800">
                             Custom
-                          </h3>
-
-                          <p className="mt-4 text-sm leading-6 dark:text-zinc-400 text-zinc-600">
+                          </div>
+                          <div className="mt-2 text-sm dark:text-neutral-400 text-zinc-900">
                             Custom requirements? We got you covered.
-                          </p>
+                          </div>
                           <div className="mt-16 ">
                             <Link
-                              className="font-medium  whitespace-nowrap transition duration-150 ease-in-out dark:text-zinc-100 dark:hover:text-white group"
-                              href="mailto:hello@gorlabs.com"
+                              className={
+                                cn(
+                                  'inline-block px-5 py-4 text-center  font-semibold tracking-tight bg-transparent hover:bg-neutral-900 hover:text-white border dark:hover:bg-white dark:hover:text-neutral-800 justify-center items-center hover:scale-105 border-neutral-700 rounded-lg transition duration-200 transform-gpu'
+                                )
+                                // ,
+                                // isBestValue
+                                //   ? 'bg-gradient-to-br from-[#f6a1a1] to-[#ed4545]'
+                                //   : 'dark:bg-neutral-700 bg-neutral-100')
+                              }
+                              style={{ zIndex: 10 }}
+                              href={'mailto:hello@gorlabs.com'}
                             >
                               Let's talk{' '}
                             </Link>
@@ -177,6 +194,7 @@ type OfferCardProps = {
     monthly: number;
     annually: number;
   };
+  noCardRequired: boolean;
   features: string[];
   infos?: string[];
   link: string;
@@ -192,6 +210,7 @@ const OfferCard = ({
   isBestValue,
   selectedBilledType,
   index,
+  noCardRequired,
   link,
 }: OfferCardProps & {
   selectedBilledType: BilledType;
@@ -205,7 +224,7 @@ const OfferCard = ({
   return (
     <div
       className={cn(
-        'rounded-2xl border hover:-translate-y-1 transition-all duration-300 ease-in-out overflow-hidden dark:bg-neutral-800/50 bg-primary dark:hover:bg-neutral-800/100 hover:bg-zinc-100/75 h-full transform-gpu',
+        'rounded-2xl border hover:-translate-y-1 transition-all duration-300 ease-in-out overflow-hidden dark:bg-neutral-900 bg-white h-full transform-gpu',
         'dark:text-neutral-400 text-zinc-900',
         isBestValue
           ? 'dark:border-[#ed8445]  border:-[#6745ed]'
@@ -213,7 +232,7 @@ const OfferCard = ({
       )}
     >
       <div
-        className={cn('p-6')}
+        className={cn('p-6 h-full')}
         style={
           isBestValue
             ? {
@@ -223,74 +242,83 @@ const OfferCard = ({
             : {}
         }
       >
-        <Particles
-          className="absolute inset-0 -z-10 opacity-10 invert dark:invert-0 group-hover/item:opacity-100 transition-opacity duration-1000 ease-in-out"
-          quantity={(index + 1) ** 2 * 10}
-          color={['#34d399', '#fde047', '#f43f5e'][index]}
-          vy={-0.2}
-        />
-        <div className="text-lg font-semibold dark:text-neutral-200 text-zinc-800">
-          {title}
-        </div>
-        <div className="mt-2 text-sm dark:text-neutral-400 text-zinc-900">
-          {description}
-        </div>
-        <div className="mt-4">
-          <div className="text-4xl font-semibold dark:text-neutral-200 text-zinc-800">
-            {price[selectedBilledType]}
-            <DollarSign className="inline size-5" />
+        <div className="hover:-translate-y-2 duration-500">
+          <Particles
+            className="absolute inset-0 -z-10 opacity-10 invert dark:invert-0 group-hover/item:opacity-100 transition-opacity duration-1000 ease-in-out"
+            quantity={(index + 1) ** 2 * 10}
+            color={['#34d399', '#fde047', '#f43f5e'][index]}
+            vy={-0.2}
+          />
+          <div className="text-5xl dark:text-neutral-200 text-zinc-800">
+            {title}
           </div>
-          <div className="text-sm dark:text-neutral-400 text-zinc-900">
-            {selectedBilledType === 'monthly'
-              ? 'billed monthly'
-              : `${getAnnualPrice()}$ billed annually`}
+          <div className="mt-2 text-sm dark:text-neutral-400 text-zinc-900">
+            {description}
           </div>
-        </div>
+          <div className="mt-4">
+            <div className="text-4xl font-semibold dark:text-neutral-200 text-zinc-800">
+              {price[selectedBilledType]}
+              <DollarSign className="inline size-5" />
+            </div>
+            <div className="text-sm dark:text-neutral-400 text-zinc-900">
+              {selectedBilledType === 'annually'
+                ? 'billed monthly'
+                : `${getAnnualPrice()}$ billed annually`}
+            </div>
+          </div>
 
-        <Link
-          href={link}
-          className={cn(
-            'py-2.5 px-12 rounded-full my-12 dark:text-neutral-50 dark:border-neutral-400/20 text-zinc-900 items-center justify-center inline-flex w-full hover:scale-105 transition-all font-semibold tracking-tight border transform-gpu',
-            isBestValue
-              ? 'bg-gradient-to-br from-[#f6a1a1] to-[#ed4545]'
-              : 'dark:bg-neutral-700 bg-neutral-100'
+          <Link
+            className={
+              cn(
+                'inline-block px-5 py-4 mt-12 w-full text-center  font-semibold tracking-tight bg-transparent hover:bg-neutral-900 hover:text-white border dark:hover:bg-white dark:hover:text-neutral-800 justify-center items-center hover:scale-105 border-neutral-700 rounded-lg transition duration-200 transform-gpu'
+              )
+              // ,
+              // isBestValue
+              //   ? 'bg-gradient-to-br from-[#f6a1a1] to-[#ed4545]'
+              //   : 'dark:bg-neutral-700 bg-neutral-100')
+            }
+            style={{ zIndex: 10 }}
+            href={link ?? ''}
+          >
+            Select
+          </Link>
+          {noCardRequired && (
+            <span className="text-sm text-neutral-600 tracking-tight">
+              No credit card required
+            </span>
           )}
-          style={{ zIndex: 10 }}
-        >
-          Select
-        </Link>
-
-        <p className={cn('text-sm font-semibold tracking-tight mb-4 ')}>
-          This plan includes:
-        </p>
-        <ul className="space-y-2">
-          {features.map((feature) => (
-            <li key={feature} className="flex items-center gap-2">
-              <CheckIcon
-                className={cn('h-6 w-5 flex-none', {
-                  'text-emerald-400 invert dark:invert-0': index === 0,
-                  'text-yellow-300 invert dark:invert-0': index === 1,
-                  'text-rose-500 invert dark:invert-0': index === 2,
-                })}
-                aria-hidden="true"
-              />
-              <div className=" text-sm">{feature}</div>
-            </li>
-          ))}
-        </ul>
-        {infos && (
-          <>
-            <div className="my-6 h-px bg-neutral-600" />
-            <ul className="space-y-2">
-              {infos.map((info) => (
-                <li key={info} className="flex items-center gap-2">
-                  <div className="size-1.5 bg-neutral-500 rounded-full" />
-                  <div className=" text-sm">{info}</div>
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
+          <p className={cn('text-sm mt-8 font-semibold tracking-tight mb-4 ')}>
+            This plan includes:
+          </p>
+          <ul className="space-y-2">
+            {features.map((feature) => (
+              <li key={feature} className="flex items-center gap-2">
+                <CheckIcon
+                  className={cn('h-6 w-5 flex-none', {
+                    'text-emerald-400 invert dark:invert-0': index === 0,
+                    'text-yellow-300 invert dark:invert-0': index === 1,
+                    'text-rose-500 invert dark:invert-0': index === 2,
+                  })}
+                  aria-hidden="true"
+                />
+                <div className=" text-sm">{feature}</div>
+              </li>
+            ))}
+          </ul>
+          {infos && (
+            <>
+              <div className="my-6 h-px bg-neutral-600" />
+              <ul className="space-y-2">
+                {infos.map((info) => (
+                  <li key={info} className="flex items-center gap-2">
+                    <div className="size-1.5 bg-neutral-500 rounded-full" />
+                    <div className=" text-sm">{info}</div>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
