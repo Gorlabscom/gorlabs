@@ -10,7 +10,7 @@ const Newsletter = () => {
         <Container>
           <LampContainer>
             <div className="flex flex-col items-center justify-center relative w-[60vw] text-center">
-              <h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-semibold mt-8">
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-semibold mt-2">
                 From Idea to Launch <br /> Faster Than Ever
               </h2>
               <p className="text-muted-foreground mt-6 max-w-md mx-auto">

@@ -1,4 +1,8 @@
 import type { Config } from 'tailwindcss';
+const svgToDataUri = require('mini-svg-data-uri');
+const {
+  default: flattenColorPalette,
+} = require('tailwindcss/lib/util/flattenColorPalette');
 
 const config = {
   darkMode: ['class'],
@@ -59,6 +63,10 @@ const config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      fontFamily: {
+        heading: ['var(--font-bricolage)'],
+        default: ['var(--font-lexend)'],
+      },
       keyframes: {
         'logo-cloud': {
           from: { transform: 'translateX(0)' },
@@ -88,16 +96,65 @@ const config = {
             'background-position': '0% 0%',
           },
         },
+        spinner: {
+          '0%': {
+            opacity: '1',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
+        blink: {
+          '0%': {
+            opacity: '0.2',
+          },
+          '20%': {
+            opacity: '1',
+          },
+          '100%': {
+            opacity: '0.2',
+          },
+        },
+        shimmer: {
+          '0%, 90%, 100%': {
+            'background-position': 'calc(-100% - var(--shimmer-width)) 0',
+          },
+          '30%, 60%': {
+            'background-position': 'calc(100% + var(--shimmer-width)) 0',
+          },
+        },
+        'image-glow': {
+          '0%': {
+            opacity: '0',
+            'animation-timing-function': 'cubic-bezier(.74, .25, .76, 1)',
+          },
+          '10%': {
+            opacity: '0.5',
+            'animation-timing-function': 'cubic-bezier(.12, .01, .08, .99)',
+          },
+          '100%': {
+            opacity: '0.7',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
         'logo-cloud': 'logo-cloud 30s linear infinite',
+        wiggle: 'wiggle 0.75s infinite',
+        spinner: 'spinner 1.2s linear infinite',
+        blink: 'blink 1.4s infinite both',
+        shimmer: 'shimmer 5s infinite',
+        'image-glow': 'image-glow 4s ease-out 0.6s forwards',
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    // require('tailwind-scrollbar-hide'),
+  ],
 } satisfies Config;
+
 
 export default config;
