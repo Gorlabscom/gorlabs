@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +17,7 @@
 :root,
 body,
 html {
-  font-family: "Lexend", sans-serif;
+  font-family: 'Lexend', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-overflow-scrolling: touch;
@@ -42,6 +45,7 @@ mark {
 
 ::selection {
   background: hsl(125, 42%, 85%);
+  color: hsl(var(--foreground));
 } */
 
 @media (prefers-color-scheme: dark) {
@@ -99,9 +103,8 @@ B (255 */
       0.9915 68.74%,
       1 100%
     );
-        --color-black: 0 0 0%;
+    --color-black: 0 0 0%;
     --color-white: 0 0 100%;
-
     --color-neutral-100: 0 0% 98%; /* Background layers (default bg) */
     --color-neutral-200: 0 0% 94%; /* Background layers (Bg secondary/muted) */ /* Decorative border */
     --color-neutral-300: 0 0% 90%; /* Decorative border */
@@ -180,6 +183,10 @@ B (255 */
     --primary-foreground: 0 0% 100%;
     --secondary: 264 10% 20%;
     --secondary-foreground: 0 0% 100%;
+    --tertiary: 0 0% 90%;
+    --tertiary-foreground: 0 0% 9%;
+    --subtle: 240 6% 90%;
+    --subtle-foreground: 0 0% 9%;
     --muted: 226 10% 25%;
     --muted-foreground: 264 0% 65%;
     --accent: 226 10% 25%;
@@ -202,7 +209,9 @@ B (255 */
   }
   body {
     @apply bg-background text-foreground font-sans;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
     height: 100%;
     text-rendering: optimizeLegibility;
   }
@@ -229,20 +238,20 @@ B (255 */
   }
 }
 
-
 ::view-transition-group(root) {
   animation-timing-function: var(--expo-out);
 }
 
 ::view-transition-new(root) {
-  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><filter id="blur"><feGaussianBlur stdDeviation="2"/></filter></defs><circle cx="0" cy="0" r="18" fill="white" filter="url(%23blur)"/></svg>') top left / 0 no-repeat;
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><filter id="blur"><feGaussianBlur stdDeviation="2"/></filter></defs><circle cx="0" cy="0" r="18" fill="white" filter="url(%23blur)"/></svg>')
+    top left / 0 no-repeat;
   mask-origin: content-box;
   animation: scale 1s;
   transform-origin: top left;
 }
 
 ::view-transition-old(root),
-  .dark::view-transition-old(root) {
+.dark::view-transition-old(root) {
   animation: scale 1s;
   transform-origin: top left;
   z-index: -1;
@@ -252,4 +261,41 @@ B (255 */
   to {
     mask-size: 350vmax;
   }
+}
+
+::selection {
+  background-color: rgba(168, 85, 247, 0.2);
+  color: hsl(var(--foreground));
+}
+
+.dumy {
+  color: hsl(0 0% 98%);
+  color: rgb(38, 38, 38);
+  /* @apply to-purple-500 */
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  scrollbar-color: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #262626;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+.gradient {
+  background: conic-gradient(
+    from 230.29deg at 51.63% 52.16%,
+    rgb(36, 0, 255) 0deg,
+    rgb(0, 135, 255) 67.5deg,
+    rgb(108, 39, 157) 198.75deg,
+    rgb(24, 38, 163) 251.25deg,
+    rgb(54, 103, 196) 301.88deg,
+    rgb(105, 30, 255) 360deg
+  );
 }

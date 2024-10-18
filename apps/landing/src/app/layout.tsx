@@ -9,6 +9,11 @@ import { siteConfig } from '@/config/site';
 import Metrics from '@/metrics';
 import { Header } from '@/components/Header';
 
+const lexend = localFont({
+  src: './fonts/Lexend-Regular.woff2',
+  variable: '--font-lexend',
+});
+
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
@@ -85,7 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} dark:bg-zinc-900`}
+        className={`${lexend.variable} ${geistMono.variable} dark:bg-zinc-900`}
       >
         <Metrics />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
