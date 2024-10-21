@@ -153,8 +153,20 @@ const config = {
   plugins: [
     require('tailwindcss-animate'),
     // require('tailwind-scrollbar-hide'),
+    addVariablesForColors,
   ],
 } satisfies Config;
 
+
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+};
 
 export default config;
