@@ -42,3 +42,4 @@ export * from './components/Container/Container';
 export * from './components/SectionBadge/SectionBadge';
 export * from './components/LandingIcons/LandingIcons';
 export * from './components/LampContainer/LampContainer';
+export * from './components/TextHoverEffect/TextHoverEffect';
