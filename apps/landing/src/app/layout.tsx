@@ -8,6 +8,7 @@ import Particles from '@/components/Particles/Particles';
 import { siteConfig } from '@/config/site';
 import Metrics from '@/metrics';
 import { Header } from '@/components/Header';
+import Script from "next/script";
 
 const lexend = localFont({
   src: './fonts/Lexend-Regular.woff2',
