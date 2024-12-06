@@ -92,6 +92,10 @@ export default function RootLayout({
       <body
         className={`${lexend.variable} ${geistMono.variable} dark:bg-zinc-900`}
       >
+        <Script
+            defer
+            src="https://umami.gorlabs.com/script.js" data-website-id="98df0aeb-c3d4-471a-80dc-5baa067d28cf"
+          />
         <Metrics />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {/* <Navbar /> */}
