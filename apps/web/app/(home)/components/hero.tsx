@@ -1,13 +1,13 @@
 import { env } from '@/env';
-import { blog } from '@repo/cms';
+// import { blog } from '@repo/cms';
 // import { Feed } from '@repo/cms/components/feed';
-import { Button } from '@repo/design-system/components/ui/button';
+import { Button } from '@repo/design-system/components/index';
 import { MoveRight, PhoneCall } from 'lucide-react';
 import { draftMode } from 'next/headers';
 import Link from 'next/link';
 
 export const Hero = async () => {
-  const draft = await draftMode();
+  // const draft = await draftMode();
 
   return (
     <div className="w-full">

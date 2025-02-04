@@ -20,3 +20,7 @@ export const DesignSystemProvider = ({
     </AuthProvider>
   </ThemeProvider>
 );
+
+// export * from './components';
+// export * from './hooks';
+export * from './lib'
