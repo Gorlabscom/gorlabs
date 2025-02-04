@@ -1,6 +1,6 @@
 import '@repo/design-system/styles/globals.css';
 import './styles/web.css';
-import { legal } from '@repo/cms';
+// import { legal } from '@repo/cms';
 // import { Feed } from '@repo/cms/components/feed';
 import { DesignSystemProvider } from '@repo/design-system';
 import { fonts } from '@repo/design-system/lib/fonts';
