@@ -1,0 +1,7 @@
+name = "gorlabs"
+compatibility_date = "2025-02-04"
+compatibility_flags = [ "nodejs_compat" ]
+pages_build_output_dir = ".vercel/output/static"
+
+[placement]
+mode = "smart"
