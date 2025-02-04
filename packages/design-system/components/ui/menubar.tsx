@@ -7,7 +7,6 @@ import { CheckIcon, ChevronRightIcon, DotFilledIcon } from "@radix-ui/react-icon
 
 const MenubarMenu: typeof MenubarPrimitive.Menu = MenubarPrimitive.Menu
 
-
 const MenubarGroup = MenubarPrimitive.Group
 
 const MenubarPortal = MenubarPrimitive.Portal
