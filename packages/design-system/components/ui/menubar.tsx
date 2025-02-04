@@ -5,7 +5,8 @@ import * as MenubarPrimitive from "@radix-ui/react-menubar"
 import { cn } from "@repo/design-system/lib/utils"
 import { CheckIcon, ChevronRightIcon, DotFilledIcon } from "@radix-ui/react-icons"
 
-const MenubarMenu = MenubarPrimitive.Menu
+const MenubarMenu: typeof MenubarPrimitive.Menu = MenubarPrimitive.Menu
+
 
 const MenubarGroup = MenubarPrimitive.Group
 
