@@ -30,7 +30,7 @@
     "vitest": "^3.0.3"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=18"
   },
   "packageManager": "pnpm@9.15.4",
   "dependencies": {
