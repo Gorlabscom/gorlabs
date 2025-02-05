@@ -46,3 +46,7 @@ next-env.d.ts
 
 # content-collections
 .content-collections
+
+# wrangler files
+.wrangler
+.dev.vars

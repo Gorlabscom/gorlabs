@@ -93,6 +93,8 @@
 
 // export default LegalPage;
 
+export const runtime = 'edge';
+
 import React from 'react'
 
 const legal = () => {

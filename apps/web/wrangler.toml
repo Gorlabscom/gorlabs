@@ -1,5 +1,5 @@
 name = "gorlabs"
-compatibility_date = "2024-09-23"
+compatibility_date = "2024-11-12"
 compatibility_flags = [ "nodejs_compat" ]
 pages_build_output_dir = ".vercel/output/static"
 
@@ -8,3 +8,7 @@ mode = "smart"
 
 [vars]
 NODE_VERSION = "18.18.0"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
