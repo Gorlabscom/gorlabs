@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 import { showBetaFeature } from '@repo/feature-flags';
 import { createMetadata } from '@repo/seo/metadata';
