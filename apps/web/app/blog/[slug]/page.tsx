@@ -145,6 +145,7 @@
 // };
 
 // export default BlogPost;
+export const runtime = 'edge';
 import React from 'react'
 
 const BlogPost = () => {
