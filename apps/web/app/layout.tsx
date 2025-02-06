@@ -1,4 +1,4 @@
-// export const runtime = 'edge';
+export const runtime = 'edge';
 
 import '@repo/design-system/styles/globals.css';
 import './styles/web.css';
