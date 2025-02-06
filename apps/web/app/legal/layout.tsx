@@ -1,3 +1,5 @@
+// export const runtime = 'edge';
+
 // import { Toolbar } from '@repo/cms/components/toolbar';
 import type { ReactNode } from 'react';
 

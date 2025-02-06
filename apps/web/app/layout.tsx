@@ -1,3 +1,5 @@
+// export const runtime = 'edge';
+
 import '@repo/design-system/styles/globals.css';
 import './styles/web.css';
 // import { legal } from '@repo/cms';
