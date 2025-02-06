@@ -1,7 +1,7 @@
 // export const runtime = 'edge';
 
 // TODO(temp): comment showBetaFeature
-import { showBetaFeature } from '@repo/feature-flags';
+// import { showBetaFeature } from '@repo/feature-flags';
 import { createMetadata } from '@repo/seo/metadata';
 import type { Metadata } from 'next';
 import { Cases } from './components/cases';
@@ -21,17 +21,17 @@ const meta = {
 export const metadata: Metadata = createMetadata(meta);
 
 // remove async & const betaFeature
-const Home = async () => {
-  const betaFeature = await showBetaFeature();
+const Home = () => {
+  // const betaFeature = await showBetaFeature();
 
   return (
     <>
     {/* remove betaFeature flag*/}
-      {betaFeature && (
+      {/* {betaFeature && (
         <div className="w-full bg-black py-2 text-center text-white">
           Beta feature now available
         </div>
-      )}
+      )} */}
       <Hero />
       <Cases />
       <Features />
