@@ -12,6 +12,6 @@
       "@repo/design-system/*": ["./*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "icons/index.mts"],
   "exclude": ["node_modules"]
 }
