@@ -169,7 +169,7 @@ export const update = async (options: { from?: string; to?: string }) => {
     s.message('Creating temporary directory...');
     await createTemporaryDirectory(tempDirName);
 
-    s.message('Cloning gorlabs...');
+    s.message('Cloning next-forge...');
     await cloneRepository(tempDirName);
 
     s.message('Moving into repository...');
