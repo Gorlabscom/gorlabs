@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { promisify } from 'node:util';
 
-export const url = 'https://github.com/haydenbleasel/gorlabs';
+export const url = 'https://github.com/gauravmandall/next-forge';
 
 export const cleanFileName = (file: string) =>
   file.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\\/g, '/');
@@ -21,7 +21,7 @@ export const internalContentFiles = [
   join('.github', 'FUNDING.yml'),
   join('.github', 'SECURITY.md'),
   '.autorc',
-  'CHANGELOG.md',
+  'update_CHANGELOG.md',
   'license.md',
 ];
 
