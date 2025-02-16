@@ -9,8 +9,8 @@ import { fonts } from '@repo/design-system/lib/fonts';
 import { cn } from '@repo/design-system/lib/utils';
 import { Toolbar } from '@repo/feature-flags/components/toolbar';
 import type { ReactNode } from 'react';
-import { Footer } from './components/footer';
-import { Header } from './components/Header';
+import { Footer } from '@/components/footer';
+import { Header } from '@/components/header';
 // import { Header } from './components/Header/index'
 
 type RootLayoutProperties = {

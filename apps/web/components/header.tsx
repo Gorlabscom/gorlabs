@@ -17,11 +17,11 @@ import { env } from '@/env';
 
 
 const navItems = [
-  { id: 1, label: 'Pricing', href: '/#plans' },
+  { id: 1, label: 'Pricing', href: '/pricing' },
   { id: 2, label: 'About', href: '/about' },
   // {
   //   id: 3,
-  //   label: 'Documentation',
+  //   label: 'Docs',
   //   href: `https://docs.${siteConfig.siteDomain}`,
   // },
 ];
