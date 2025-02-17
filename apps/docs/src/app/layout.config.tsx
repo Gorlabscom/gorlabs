@@ -11,6 +11,7 @@ export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
       <>
+        {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
         <svg
           width="24"
           height="24"
