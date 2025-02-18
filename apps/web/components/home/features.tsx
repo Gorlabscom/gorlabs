@@ -10,7 +10,8 @@ export const Features = () => (
               Something new!
             </h2>
             <p className="max-w-xl text-left text-lg text-muted-foreground leading-relaxed tracking-tight lg:max-w-lg">
-              Managing a small business today is already tough.
+              Where great powers meet{' '}
+              <span className="text-purple-400">simplicity</span>
             </p>
           </div>
         </div>

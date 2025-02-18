@@ -11,6 +11,9 @@ import { Features } from '@/components/home/features';
 import { Hero } from '@/components/home/hero';
 import { Stats } from '@/components/home/stats';
 import { Testimonials } from '@/components/home/testimonials';
+import Pricing from '@/components/home/pricing'
+import { Introduction } from '@/components/home/introduction';
+import { Integrations } from '@/components/home/integrations'
 
 const meta = {
   title: 'Gorlabs',
@@ -33,10 +36,13 @@ const Home = () => {
         </div>
       )} */}
       <Hero />
-      <Cases />
-      <Features />
-      <Stats />
-      <Testimonials />
+      <Introduction />
+      {/* <Cases /> */}
+      <Integrations />
+      <Pricing />
+      {/* <Features /> */}
+      {/* <Stats /> */}
+      {/* <Testimonials /> */}
       <FAQ />
       <CTA />
     </>
