@@ -46,88 +46,6 @@ importers:
         specifier: ^3.0.5
         version: 3.0.5(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@22.13.1)(jiti@2.4.2)(jsdom@26.0.0(bufferutil@4.0.9))(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.6.0)
 
-  apps/__docs:
-    dependencies:
-      '@next/third-parties':
-        specifier: ^15.1.6
-        version: 15.1.6(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
-      '@repo/design-system':
-        specifier: workspace:*
-        version: link:../../packages/design-system
-      '@repo/email':
-        specifier: workspace:*
-        version: link:../../packages/email
-      '@repo/feature-flags':
-        specifier: workspace:*
-        version: link:../../packages/feature-flags
-      '@repo/next-config':
-        specifier: workspace:*
-        version: link:../../packages/next-config
-      '@repo/observability':
-        specifier: workspace:*
-        version: link:../../packages/observability
-      '@repo/rate-limit':
-        specifier: workspace:*
-        version: link:../../packages/rate-limit
-      '@repo/security':
-        specifier: workspace:*
-        version: link:../../packages/security
-      '@repo/seo':
-        specifier: workspace:*
-        version: link:../../packages/seo
-      '@vercel/analytics':
-        specifier: ^1.4.1
-        version: 1.4.1(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)(svelte@5.2.7)(vue@3.5.13(typescript@5.7.3))
-      fumadocs-core:
-        specifier: 15.0.8
-        version: 15.0.8(@types/react@19.0.8)(algoliasearch@4.24.0)(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      fumadocs-mdx:
-        specifier: 11.5.5
-        version: 11.5.5(acorn@8.14.0)(fumadocs-core@15.0.8(@types/react@19.0.8)(algoliasearch@4.24.0)(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
-      fumadocs-typescript:
-        specifier: ^3.0.3
-        version: 3.0.3(typescript@5.7.3)
-      fumadocs-ui:
-        specifier: 15.0.8
-        version: 15.0.8(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(fumadocs-core@15.0.8(@types/react@19.0.8)(algoliasearch@4.24.0)(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@4.0.6)
-      geist:
-        specifier: ^1.3.1
-        version: 1.3.1(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
-      next:
-        specifier: 15.1.6
-        version: 15.1.6(@babel/core@7.26.8)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      react:
-        specifier: ^19.0.0
-        version: 19.0.0
-      react-dom:
-        specifier: ^19.0.0
-        version: 19.0.0(react@19.0.0)
-    devDependencies:
-      '@tailwindcss/postcss':
-        specifier: ^4.0.5
-        version: 4.0.6
-      '@types/mdx':
-        specifier: ^2.0.13
-        version: 2.0.13
-      '@types/node':
-        specifier: 22.13.1
-        version: 22.13.1
-      '@types/react':
-        specifier: ^19.0.8
-        version: 19.0.8
-      '@types/react-dom':
-        specifier: ^19.0.3
-        version: 19.0.3(@types/react@19.0.8)
-      postcss:
-        specifier: ^8.5.1
-        version: 8.5.1
-      tailwindcss:
-        specifier: ^4.0.5
-        version: 4.0.6
-      typescript:
-        specifier: ^5.7.3
-        version: 5.7.3
-
   apps/api:
     dependencies:
       '@repo/analytics':
@@ -471,6 +389,9 @@ importers:
       '@content-collections/mdx':
         specifier: ^0.2.0
         version: 0.2.0(@content-collections/core@0.8.0(typescript@5.7.3))(acorn@8.14.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@radix-ui/react-avatar':
+        specifier: ^1.1.3
+        version: 1.1.3(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@radix-ui/react-icons':
         specifier: ^1.3.2
         version: 1.3.2(react@19.0.0)
@@ -561,7 +482,7 @@ importers:
     devDependencies:
       '@cloudflare/next-on-pages':
         specifier: ^1.13.7
-        version: 1.13.7(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9)(vercel@41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@4.34.6))(wrangler@3.109.1(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9))
+        version: 1.13.7(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9)(vercel@41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@3.29.5))(wrangler@3.109.1(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9))
       '@cloudflare/workers-types':
         specifier: ^4.20250214.0
         version: 4.20250214.0
@@ -594,7 +515,7 @@ importers:
         version: 5.7.3
       vercel:
         specifier: ^41.1.4
-        version: 41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@4.34.6)
+        version: 41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@3.29.5)
       wrangler:
         specifier: ^3.109.1
         version: 3.109.1(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9)
@@ -973,6 +894,9 @@ importers:
       lucide-react:
         specifier: ^0.475.0
         version: 0.475.0(react@19.0.0)
+      motion:
+        specifier: ^12.4.3
+        version: 12.4.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       next-themes:
         specifier: ^0.4.4
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -6060,9 +5984,6 @@ packages:
   '@ts-morph/common@0.11.1':
     resolution: {integrity: sha512-7hWZS0NRpEsNV8vWJzg7FEz6V8MaLNeJOmwmghqUXTpzk16V1LLZhdo+4QvE/+zv4cVci0OviuJFnqhEfoV3+g==}
 
-  '@ts-morph/common@0.26.1':
-    resolution: {integrity: sha512-Sn28TGl/4cFpcM+jwsH1wLncYq3FtN/BIpem+HOygfBWPT5pAeS5dB4VFVzV8FbnOKHpDLZmvAl4AjPEev5idA==}
-
   '@tsconfig/node10@1.0.11':
     resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
 
@@ -7196,9 +7117,6 @@ packages:
 
   code-block-writer@10.1.1:
     resolution: {integrity: sha512-67ueh2IRGst/51p0n6FvPrnRjAGHY5F8xdjkgrYE7DDzpJe6qA07RYQ9VcoUeo5ATOjSOiWpSL3SWBRRbempMw==}
-
-  code-block-writer@13.0.3:
-    resolution: {integrity: sha512-Oofo0pq3IKnsFtuHqSF7TqBfr71aeyZDVJ0HpmqB7FBM2qEigL0iPONSCZSO9pE9dZTAxANe5XHG9Uy0YMv8cg==}
 
   collapse-white-space@2.1.0:
     resolution: {integrity: sha512-loKTxY1zCOuG4j9f6EPnuyyYkf58RnhhWTvRoZEokgB+WbdXehfjFviyOVYkqzEWz1Q5kRiZdBYS5SwxbQYwzw==}
@@ -8450,8 +8368,8 @@ packages:
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
 
-  framer-motion@12.4.3:
-    resolution: {integrity: sha512-rsMeO7w3dKyNG09o3cGwSH49iHU+VgDmfSSfsX+wfkO3zDA6WWkh4sUsMXd155YROjZP+7FTIhDrBYfgZeHjKQ==}
+  framer-motion@12.4.4:
+    resolution: {integrity: sha512-JWkVwbJBgVkeZHNcnk8ififgwTF+5de9wbJnTLI+g9YqaGo75Xd5uRVDm9FR8chqRDOKcXv/71f40CGescYVmg==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -8571,11 +8489,6 @@ packages:
     peerDependenciesMeta:
       '@fumadocs/mdx-remote':
         optional: true
-
-  fumadocs-typescript@3.0.3:
-    resolution: {integrity: sha512-TpVem2Sy+fo5e8wJibisn1XZoRdwNyY8+MuxQWBC2k8Q4oaxA6qVVsy2paCVEa716UnXbES0sVP1HqX3HCEhBg==}
-    peerDependencies:
-      typescript: '*'
 
   fumadocs-ui@15.0.8:
     resolution: {integrity: sha512-FB7IDbhOV39xeEp1BVV477eU0sq8pveXdlZJ6EzvO5XsSHyC0TmXiXJHJhm6EPgW8QGD7Ne87Jia2TqxqtUDtA==}
@@ -9861,8 +9774,8 @@ packages:
   module-details-from-path@1.0.3:
     resolution: {integrity: sha512-ySViT69/76t8VhE1xXHK6Ch4NcDd26gx0MzKXLO+F7NOtnqH68d9zF94nT8ZWSxXh8ELOERsnJO/sWt1xZYw5A==}
 
-  motion-dom@12.0.0:
-    resolution: {integrity: sha512-CvYd15OeIR6kHgMdonCc1ihsaUG4MYh/wrkz8gZ3hBX/uamyZCXN9S9qJoYF03GqfTt7thTV/dxnHYX4+55vDg==}
+  motion-dom@12.4.4:
+    resolution: {integrity: sha512-D8Kjp8oqUNqxoAVmIlOH+YCMov/4koBAmG4OJs0VWfh18xkQEIsx9+S7yrXyx0XaMBEPtre6e9LiSW2Zs7vIhA==}
 
   motion-utils@12.0.0:
     resolution: {integrity: sha512-MNFiBKbbqnmvOjkPyOKgHUp3Q6oiokLkI1bEwm5QA28cxMZrv0CbbBGDNmhF6DIXsi1pCQBSs0dX8xjeER1tmA==}
@@ -11823,9 +11736,6 @@ packages:
 
   ts-morph@12.0.0:
     resolution: {integrity: sha512-VHC8XgU2fFW7yO1f/b3mxKDje1vmyzFXHWzOYmKEkCEwcLjDtbdLgBQviqj4ZwP4MJkQtRo6Ha2I29lq/B+VxA==}
-
-  ts-morph@25.0.1:
-    resolution: {integrity: sha512-QJEiTdnz1YjrB3JFhd626gX4rKHDLSjSVMvGGG4v7ONc3RBwa0Eei98G9AT9uNFDMtV54JyuXsFeC+OH0n6bXQ==}
 
   ts-node@10.9.1:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
@@ -13915,7 +13825,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.13.7(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9)(vercel@41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@4.34.6))(wrangler@3.109.1(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9))':
+  '@cloudflare/next-on-pages@1.13.7(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9)(vercel@41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@3.29.5))(wrangler@3.109.1(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9))':
     dependencies:
       acorn: 8.14.0
       ast-types: 0.14.2
@@ -13929,7 +13839,7 @@ snapshots:
       package-manager-manager: 0.2.0
       pcre-to-regexp: 1.1.0
       semver: 7.7.1
-      vercel: 41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@4.34.6)
+      vercel: 41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@3.29.5)
       wrangler: 3.109.1(@cloudflare/workers-types@4.20250214.0)(bufferutil@4.0.9)
     optionalDependencies:
       '@cloudflare/workers-types': 4.20250214.0
@@ -16476,13 +16386,13 @@ snapshots:
     optionalDependencies:
       rollup: 3.29.5
 
-  '@rollup/pluginutils@5.1.4(rollup@4.34.6)':
+  '@rollup/pluginutils@5.1.4(rollup@3.29.5)':
     dependencies:
       '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 4.0.2
     optionalDependencies:
-      rollup: 4.34.6
+      rollup: 3.29.5
 
   '@rollup/rollup-android-arm-eabi@4.34.6':
     optional: true
@@ -17659,12 +17569,6 @@ snapshots:
       mkdirp: 1.0.4
       path-browserify: 1.0.1
 
-  '@ts-morph/common@0.26.1':
-    dependencies:
-      fast-glob: 3.3.3
-      minimatch: 9.0.5
-      path-browserify: 1.0.1
-
   '@tsconfig/node10@1.0.11': {}
 
   '@tsconfig/node12@1.0.11': {}
@@ -18037,18 +17941,18 @@ snapshots:
       '@vercel/static-config': 3.0.0
       ts-morph: 12.0.0
 
-  '@vercel/next@4.6.2(rollup@4.34.6)':
+  '@vercel/next@4.6.2(rollup@3.29.5)':
     dependencies:
-      '@vercel/nft': 0.27.10(rollup@4.34.6)
+      '@vercel/nft': 0.27.10(rollup@3.29.5)
     transitivePeerDependencies:
       - encoding
       - rollup
       - supports-color
 
-  '@vercel/nft@0.27.10(rollup@4.34.6)':
+  '@vercel/nft@0.27.10(rollup@3.29.5)':
     dependencies:
       '@mapbox/node-pre-gyp': 2.0.0
-      '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
+      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
       acorn: 8.14.0
       acorn-import-attributes: 1.9.5(acorn@8.14.0)
       async-sema: 3.1.1
@@ -18064,7 +17968,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.1.7(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@4.34.6)':
+  '@vercel/node@5.1.7(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@3.29.5)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
@@ -18072,7 +17976,7 @@ snapshots:
       '@types/node': 16.18.11
       '@vercel/build-utils': 10.1.0
       '@vercel/error-utils': 2.0.3
-      '@vercel/nft': 0.27.10(rollup@4.34.6)
+      '@vercel/nft': 0.27.10(rollup@3.29.5)
       '@vercel/static-config': 3.0.0
       async-listen: 3.0.0
       cjs-module-lexer: 1.2.3
@@ -18096,9 +18000,9 @@ snapshots:
 
   '@vercel/python@4.7.1': {}
 
-  '@vercel/redwood@2.2.0(rollup@4.34.6)':
+  '@vercel/redwood@2.2.0(rollup@3.29.5)':
     dependencies:
-      '@vercel/nft': 0.27.10(rollup@4.34.6)
+      '@vercel/nft': 0.27.10(rollup@3.29.5)
       '@vercel/routing-utils': 5.0.2
       '@vercel/static-config': 3.0.0
       semver: 6.3.1
@@ -18108,10 +18012,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/remix-builder@5.3.3(rollup@4.34.6)':
+  '@vercel/remix-builder@5.3.3(rollup@3.29.5)':
     dependencies:
       '@vercel/error-utils': 2.0.3
-      '@vercel/nft': 0.27.10(rollup@4.34.6)
+      '@vercel/nft': 0.27.10(rollup@3.29.5)
       '@vercel/static-config': 3.0.0
       path-to-regexp: 6.1.0
       path-to-regexp-updated: path-to-regexp@6.3.0
@@ -19052,8 +18956,6 @@ snapshots:
       - '@types/react-dom'
 
   code-block-writer@10.1.1: {}
-
-  code-block-writer@13.0.3: {}
 
   collapse-white-space@2.1.0: {}
 
@@ -20375,9 +20277,9 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  framer-motion@12.4.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  framer-motion@12.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
-      motion-dom: 12.0.0
+      motion-dom: 12.4.4
       motion-utils: 12.0.0
       tslib: 2.8.1
     optionalDependencies:
@@ -20505,19 +20407,6 @@ snapshots:
       zod: 3.24.1
     transitivePeerDependencies:
       - acorn
-      - supports-color
-
-  fumadocs-typescript@3.0.3(typescript@5.7.3):
-    dependencies:
-      fast-glob: 3.3.3
-      hast-util-to-jsx-runtime: 2.3.2
-      mdast-util-from-markdown: 2.0.2
-      mdast-util-gfm: 3.0.0
-      mdast-util-to-hast: 13.2.0
-      shiki: 2.3.2
-      ts-morph: 25.0.1
-      typescript: 5.7.3
-    transitivePeerDependencies:
       - supports-color
 
   fumadocs-ui@15.0.8(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(fumadocs-core@15.0.8(@types/react@19.0.8)(algoliasearch@4.24.0)(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(next@15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@4.0.6):
@@ -22181,7 +22070,7 @@ snapshots:
 
   module-details-from-path@1.0.3: {}
 
-  motion-dom@12.0.0:
+  motion-dom@12.4.4:
     dependencies:
       motion-utils: 12.0.0
 
@@ -22189,7 +22078,7 @@ snapshots:
 
   motion@12.4.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
-      framer-motion: 12.4.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      framer-motion: 12.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       tslib: 2.8.1
     optionalDependencies:
       react: 19.0.0
@@ -24516,11 +24405,6 @@ snapshots:
       '@ts-morph/common': 0.11.1
       code-block-writer: 10.1.1
 
-  ts-morph@25.0.1:
-    dependencies:
-      '@ts-morph/common': 0.26.1
-      code-block-writer: 13.0.3
-
   ts-node@10.9.1(@swc/core@1.3.101(@swc/helpers@0.5.15))(@types/node@16.18.11)(typescript@4.9.5):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
@@ -24956,17 +24840,17 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  vercel@41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@4.34.6):
+  vercel@41.1.4(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@3.29.5):
     dependencies:
       '@vercel/build-utils': 10.1.0
       '@vercel/fun': 1.1.4
       '@vercel/go': 3.2.1
       '@vercel/hydrogen': 1.1.0
-      '@vercel/next': 4.6.2(rollup@4.34.6)
-      '@vercel/node': 5.1.7(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@4.34.6)
+      '@vercel/next': 4.6.2(rollup@3.29.5)
+      '@vercel/node': 5.1.7(@swc/core@1.3.101(@swc/helpers@0.5.15))(rollup@3.29.5)
       '@vercel/python': 4.7.1
-      '@vercel/redwood': 2.2.0(rollup@4.34.6)
-      '@vercel/remix-builder': 5.3.3(rollup@4.34.6)
+      '@vercel/redwood': 2.2.0(rollup@3.29.5)
+      '@vercel/remix-builder': 5.3.3(rollup@3.29.5)
       '@vercel/ruby': 2.2.0
       '@vercel/static-build': 2.6.6
       chokidar: 4.0.0

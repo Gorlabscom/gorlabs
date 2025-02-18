@@ -6,11 +6,15 @@ export const Stats = () => (
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="flex flex-col items-start gap-4">
           <div className="flex flex-col gap-2">
-            <h2 className="text-left font-regular text-xl tracking-tighter md:text-5xl lg:max-w-xl">
-              This is the start of something new
+            <h2 className="max-w-xl text-left font-regular text-3xl tracking-tighter md:text-5xl">
+              Something new!
             </h2>
+            <p className="max-w-xl text-left text-lg text-muted-foreground leading-relaxed tracking-tight lg:max-w-lg">
+              Where great powers meet{' '}
+              <span className="text-purple-400">simplicity</span>
+            </p>
             <p className="text-left text-lg text-muted-foreground leading-relaxed tracking-tight lg:max-w-sm">
-              Managing a small business today is already tough. Avoid further
+              Managing a small web3 product today is already tough. Avoid further
               complications by ditching outdated, tedious trade methods. Our
               goal is to streamline SMB trade, making it easier and faster than
               ever.
