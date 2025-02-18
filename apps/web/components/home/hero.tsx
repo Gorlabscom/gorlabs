@@ -60,40 +60,40 @@ export const Hero = () => {
             </p>
             <div className='mb-4 flex flex-wrap items-center justify-center gap-8'>
               <Image
-                src="https://www.caldera.xyz/manta-pacific.svg"
+                src="/assets/manta.svg"
                 alt="Manta Pacific"
-                width={120}
-                height={40}
+                width={60}
+                height={20}
               />
               <Image
-                src="https://www.caldera.xyz/treasure.svg"
+                src="/assets/treasure.png"
                 alt="Treasure"
-                width={120}
-                height={40}
+                width={60}
+                height={20}
               />
               <Image
-                src="https://www.caldera.xyz/apecoin.svg"
+                src="/assets/apecoin.png"
                 alt="ApeCoin"
-                width={120}
-                height={40}
+                width={60}
+                height={20}
               />
               <Image
-                src="https://www.caldera.xyz/injective-labs.svg"
+                src="/assets/injective.png"
                 alt="Injective Labs"
-                width={120}
-                height={40}
+                width={60}
+                height={20}
               />
               <Image
-                src="https://www.caldera.xyz/zerion.svg"
+                src="/assets/zerion.png"
                 alt="Zerion"
-                width={120}
-                height={40}
+                width={60}
+                height={20}
               />
               <Image
-                src="https://www.caldera.xyz/kinto.svg"
+                src="/assets/kinto.png"
                 alt="Kinto"
-                width={120}
-                height={40}
+                width={60}
+                height={20}
               />
             </div>
             {/* <p className='text-gray-500 text-sm'>And more</p> */}

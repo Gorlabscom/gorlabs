@@ -25,7 +25,7 @@ export const CTA = () => (
             </Link>
           </Button>
           <Button className="gap-4" asChild>
-            <Link href="book">
+            <Link href="mailto:hello@gorlabs.com">
               Prebook now <MoveRight className="h-4 w-4" />
             </Link>
           </Button>
