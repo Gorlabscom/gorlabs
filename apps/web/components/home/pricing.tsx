@@ -25,7 +25,7 @@ const pricingData: OfferCardProps[] = [
       'Premium support',
     ],
     infos: ['Email & slack support'],
-    link: '/billing?ref=teams',
+    link: 'mailto:hello@gorlabs.com?subject=Teams%20Plan%20Enquiry',
   },
   {
     title: 'Startup',
@@ -45,7 +45,7 @@ const pricingData: OfferCardProps[] = [
       'Premium support & training sessions',
     ],
     infos: ['Phone and email support', 'free 1 year revisions'],
-    link: '/billing?ref=startup',
+    link: 'mailto:hello@gorlabs.com?subject=Startup%20Plan%20Enquiry',
     isBestValue: true,
     closingSoon: true,
   },
@@ -156,7 +156,7 @@ export default function Pricing() {
                               //   : 'dark:bg-neutral-700 bg-neutral-100')
                             }
                             style={{ zIndex: 10 }}
-                            href={'mailto:hello@gorlabs.com'}
+                            href={'mailto:hello@gorlabs.com?subject=Enterprise%20Plan%20Enquiry'}
                           >
                             Let's talk{' '}
                           </Link>
