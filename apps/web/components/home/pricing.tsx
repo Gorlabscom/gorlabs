@@ -13,8 +13,8 @@ const pricingData: OfferCardProps[] = [
     title: 'Teams',
     description: 'For small teams',
     price: {
-      monthly: 1499,
-      annually: 14499,
+      monthly: 299,
+      annually: 2999,
     },
     slots: 2,
     noCardRequired: false,
@@ -31,8 +31,8 @@ const pricingData: OfferCardProps[] = [
     title: 'Startup',
     description: 'For large businesses',
     price: {
-      monthly: 11799,
-      annually: 79499,
+      monthly: 1499,
+      annually: 14499,
     },
     slots: 1,
     noCardRequired: false,
