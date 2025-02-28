@@ -2,21 +2,21 @@ import Link from 'next/link';
 
 export default function LegalPage() {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <h1 className="text-3xl font-bold mb-8">Legal Information</h1>
+    <div className='container mx-auto max-w-4xl px-4 py-12'>
+      <h1 className='mb-8 font-bold text-3xl'>Legal Information</h1>
 
       <div className="space-y-12">
         <section id="terms" className="space-y-6">
-          <h2 className="text-2xl font-semibold border-b pb-2">
+          <h2 className='border-b pb-2 font-semibold text-2xl'>
             Terms and Conditions
           </h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className='mb-4 text-muted-foreground text-sm'>
             Last updated: February 28, 2025
           </p>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-medium mb-2">1. Introduction</h3>
+              <h3 className='mb-2 font-medium text-xl'>1. Introduction</h3>
               <p>
                 Welcome to Gorlabs ("Company", "we", "our", "us"). These Terms
                 and Conditions ("Terms", "Terms and Conditions") govern your use
@@ -28,7 +28,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 2. Services Description
               </h3>
               <p>
@@ -42,7 +42,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 3. Service Engagement
               </h3>
               <p>
@@ -56,7 +56,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 4. Intellectual Property
               </h3>
               <p>
@@ -76,7 +76,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">5. Payment Terms</h3>
+              <h3 className='mb-2 font-medium text-xl'>5. Payment Terms</h3>
               <p>
                 Payment terms are specified in individual client agreements.
                 Generally, we require an upfront payment before commencing work,
@@ -91,7 +91,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 6. Blockchain Technology Risks
               </h3>
               <p>
@@ -111,7 +111,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 7. Limitation of Liability
               </h3>
               <p>
@@ -122,7 +122,7 @@ export default function LegalPage() {
                 limitation, loss of profits, data, use, goodwill, or other
                 intangible losses, resulting from:
               </p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className='mt-2 list-disc space-y-1 pl-6'>
                 <li>Your use or inability to use our services</li>
                 <li>Any changes to blockchain networks or protocols</li>
                 <li>Unauthorized access to or alteration of your data</li>
@@ -142,7 +142,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">8. Indemnification</h3>
+              <h3 className='mb-2 font-medium text-xl'>8. Indemnification</h3>
               <p>
                 You agree to defend, indemnify, and hold harmless Gorlabs and
                 its licensees and licensors, and their employees, contractors,
@@ -157,7 +157,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">9. Termination</h3>
+              <h3 className='mb-2 font-medium text-xl'>9. Termination</h3>
               <p>
                 We may terminate or suspend your access to our Services
                 immediately, without prior notice or liability, for any reason
@@ -173,7 +173,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">10. Governing Law</h3>
+              <h3 className='mb-2 font-medium text-xl'>10. Governing Law</h3>
               <p>
                 These Terms shall be governed and construed in accordance with
                 the laws of [Jurisdiction], without regard to its conflict of
@@ -183,7 +183,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">11. Changes to Terms</h3>
+              <h3 className='mb-2 font-medium text-xl'>11. Changes to Terms</h3>
               <p>
                 We reserve the right, at our sole discretion, to modify or
                 replace these Terms at any time. If a revision is material, we
@@ -200,7 +200,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">12. Contact Us</h3>
+              <h3 className='mb-2 font-medium text-xl'>12. Contact Us</h3>
               <p>
                 If you have any questions about these Terms, please contact us
                 at{' '}
@@ -217,16 +217,16 @@ export default function LegalPage() {
         </section>
 
         <section id="privacy" className="space-y-6">
-          <h2 className="text-2xl font-semibold border-b pb-2">
+          <h2 className='border-b pb-2 font-semibold text-2xl'>
             Privacy Policy
           </h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className='mb-4 text-muted-foreground text-sm'>
             Last updated: February 28, 2025
           </p>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-medium mb-2">1. Introduction</h3>
+              <h3 className='mb-2 font-medium text-xl'>1. Introduction</h3>
               <p>
                 At Gorlabs ("Company", "we", "our", "us"), we respect your
                 privacy and are committed to protecting your personal data. This
@@ -242,14 +242,14 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 2. Information We Collect
               </h3>
               <p>
                 We may collect several types of information from and about users
                 of our Services, including:
               </p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className='mt-2 list-disc space-y-1 pl-6'>
                 <li>
                   <strong>Personal Data:</strong> Name, email address, phone
                   number, company name, and other contact information you
@@ -274,11 +274,11 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 3. How We Collect Information
               </h3>
               <p>We collect information through:</p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className='mt-2 list-disc space-y-1 pl-6'>
                 <li>
                   Direct interactions when you contact us or sign up for our
                   services
@@ -296,14 +296,14 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 4. How We Use Your Information
               </h3>
               <p>
                 We may use the information we collect for various purposes,
                 including:
               </p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className='mt-2 list-disc space-y-1 pl-6'>
                 <li>Providing, maintaining, and improving our Services</li>
                 <li>
                   Processing and fulfilling your requests and transactions
@@ -324,11 +324,11 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 5. Disclosure of Your Information
               </h3>
               <p>We may disclose your personal information to:</p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className='mt-2 list-disc space-y-1 pl-6'>
                 <li>Our subsidiaries and affiliates</li>
                 <li>
                   Contractors, service providers, and other third parties we use
@@ -361,7 +361,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 6. Blockchain Data and Public Information
               </h3>
               <p>
@@ -376,7 +376,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">7. Data Security</h3>
+              <h3 className='mb-2 font-medium text-xl'>7. Data Security</h3>
               <p>
                 We have implemented measures designed to secure your personal
                 information from accidental loss and from unauthorized access,
@@ -390,7 +390,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 8. Cookies and Tracking Technologies
               </h3>
               <p>
@@ -405,14 +405,14 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 9. Your Data Protection Rights
               </h3>
               <p>
                 Depending on your location, you may have certain rights
                 regarding your personal information, such as:
               </p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
+              <ul className='mt-2 list-disc space-y-1 pl-6'>
                 <li>
                   The right to access, update, or delete your personal
                   information
@@ -444,7 +444,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 10. Children's Privacy
               </h3>
               <p>
@@ -457,7 +457,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className='mb-2 font-medium text-xl'>
                 11. Changes to Our Privacy Policy
               </h3>
               <p>
@@ -469,7 +469,7 @@ export default function LegalPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">12. Contact Us</h3>
+              <h3 className='mb-2 font-medium text-xl'>12. Contact Us</h3>
               <p>
                 If you have any questions about this Privacy Policy, please
                 contact us at{' '}
