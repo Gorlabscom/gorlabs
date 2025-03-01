@@ -20,7 +20,7 @@ export const CTA = () => (
         </div>
         <div className="flex flex-row gap-4">
           <Button className="gap-4" variant="outline" asChild>
-            <Link href="https://cal.com/gauravmandall/30min">
+            <Link href="/meet">
               Jump on a call <PhoneCall className="h-4 w-4" />
             </Link>
           </Button>

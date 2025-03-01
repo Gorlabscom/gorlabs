@@ -42,7 +42,7 @@ export const Hero = () => {
           </div>
           <div className="flex flex-row gap-3">
             <Button size="lg" className="gap-4" variant="outline" asChild>
-              <Link href="#">
+              <Link href="/meet">
                 Get in touch <PhoneCall className="h-4 w-4" />
               </Link>
             </Button>
