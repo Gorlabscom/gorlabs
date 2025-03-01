@@ -59,42 +59,60 @@ export const Hero = () => {
               Powering 75+ ambitious teams across Web3
             </p>
             <div className='mb-4 flex flex-wrap items-center justify-center gap-8'>
-              <Image
-                src="/assets/manta.svg"
-                alt="Manta Pacific"
-                width={60}
-                height={20}
-              />
-              <Image
-                src="/assets/treasure.png"
-                alt="Treasure"
-                width={60}
-                height={20}
-              />
-              <Image
-                src="/assets/apecoin.png"
-                alt="ApeCoin"
-                width={60}
-                height={20}
-              />
-              <Image
-                src="/assets/injective.png"
-                alt="Injective Labs"
-                width={60}
-                height={20}
-              />
-              <Image
-                src="/assets/zerion.png"
-                alt="Zerion"
-                width={60}
-                height={20}
-              />
-              <Image
-                src="/assets/kinto.png"
-                alt="Kinto"
-                width={60}
-                height={20}
-              />
+              <div className='opacity-80 dark:opacity-100'>
+                <Image
+                  src="/assets/manta.svg"
+                  alt="Manta Pacific"
+                  width={60}
+                  height={20}
+                  className='invert dark:invert-0'
+                />
+              </div>
+              <div className='opacity-80 dark:opacity-100'>
+                <Image
+                  src="/assets/treasure.png"
+                  alt="Treasure"
+                  width={60}
+                  height={20}
+                  className='invert dark:invert-0'
+                />
+              </div>
+              <div className='opacity-80 dark:opacity-100'>
+                <Image
+                  src="/assets/apecoin.png"
+                  alt="ApeCoin"
+                  width={60}
+                  height={20}
+                  className='invert dark:invert-0'
+                />
+              </div>
+              <div className='opacity-80 dark:opacity-100'>
+                <Image
+                  src="/assets/injective.png"
+                  alt="Injective Labs"
+                  width={60}
+                  height={20}
+                  className='invert dark:invert-0'
+                />
+              </div>
+              <div className='opacity-80 dark:opacity-100'>
+                <Image
+                  src="/assets/zerion.png"
+                  alt="Zerion"
+                  width={60}
+                  height={20}
+                  className='invert dark:invert-0'
+                />
+              </div>
+              <div className='opacity-80 dark:opacity-100'>
+                <Image
+                  src="/assets/kinto.png"
+                  alt="Kinto"
+                  width={60}
+                  height={20}
+                  className='invert dark:invert-0'
+                />
+              </div>
             </div>
             {/* <p className='text-gray-500 text-sm'>And more</p> */}
           </div>
