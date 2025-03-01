@@ -9,11 +9,11 @@ type MetadataGenerator = Omit<Metadata, 'description' | 'title'> & {
 
 const applicationName = 'gorlabs';
 const author: Metadata['authors'] = {
-  name: 'Hayden Bleasel',
-  url: 'https://haydenbleasel.com/',
+  name: 'Gaurav Mandal',
+  url: 'https://grvx.dev/',
 };
-const publisher = 'Hayden Bleasel';
-const twitterHandle = '@haydenbleasel';
+const publisher = 'Gaurav Mandal';
+const twitterHandle = '@gauravmandall';
 
 export const createMetadata = ({
   title,
