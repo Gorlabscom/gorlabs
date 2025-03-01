@@ -14,10 +14,25 @@ let nextConfig: NextConfig = withToolbar(withLogtail({ ...config }));
 
 if (process.env.NODE_ENV === 'production') {
   const redirects: NonNullable<NextConfig['redirects']> = async () => [
+    // {
+    //   source: '/legal',
+    //   destination: '/legal/privacy',
+    //   permanent: true,
+    // },
     {
-      source: '/legal',
-      destination: '/legal/privacy',
-      permanent: true,
+      source: '/x',
+      destination: 'https://x.com/gauravmandall',
+      permanent: false,
+    },
+    {
+      source: '/github',
+      destination: 'https://github.com/gorlabscom/gorlabs',
+      permanent: false,
+    },
+    {
+      source: '/meet',
+      destination: 'https://cal.com/gauravmandall/30min',
+      permanent: false,
     },
   ];
 
