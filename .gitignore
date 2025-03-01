@@ -43,6 +43,9 @@ sw.js.map
 workbox-*.js
 workbox-*.js.map
 
+# codebase bug changelog
+.codebase-bug-changelog.md
+
 # Sentry Config File
 .env.sentry-build-plugin
 
