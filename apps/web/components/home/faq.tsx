@@ -71,7 +71,7 @@ export const FAQ = () => (
             </div>
             <div>
               <Button className="gap-4" variant="outline" asChild>
-                <Link href="mailto:hello@gorlabs.com">
+                <Link href="mailto:hello@gorlabs.com?subject=Hello%20from%20your%20website">
                   Any questions? Reach out <PhoneCall className="h-4 w-4" />
                 </Link>
               </Button>
