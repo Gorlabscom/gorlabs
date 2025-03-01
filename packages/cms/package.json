@@ -16,7 +16,7 @@
     "fumadocs-core": "^14.7.7",
     "react": "^19.0.0",
     "reading-time": "^1.5.0",
-    "zod": "^3.24.1"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@content-collections/cli": "^0.1.6",
