@@ -12,6 +12,13 @@ import type { ReactNode } from 'react';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 // import { Header } from './components/Header/index'
+import localFont from 'next/font/local';
+
+const Apparat = localFont({
+  src: './fonts/Kmr_apparat_medium.woff2',
+  variable: '--font-apparat',
+  display: 'swap',
+});
 
 type RootLayoutProperties = {
   readonly children: ReactNode;
@@ -20,14 +27,13 @@ type RootLayoutProperties = {
 const RootLayout = ({ children }: RootLayoutProperties) => (
   <html
     lang="en"
-    className={cn(fonts, 'scroll-smooth')}
+    className={cn(`${Apparat.className}`, fonts, 'scroll-smooth')}
     suppressHydrationWarning
   >
     <body>
       <DesignSystemProvider>
         <Header />
         {children}
-        {/* biome-ignore lint/suspicious/useAwait: "Server Actions must be async" */}
       </DesignSystemProvider>
       <Toolbar />
       {/* <CMSToolbar /> */}
