@@ -27,7 +27,7 @@ type RootLayoutProperties = {
 const RootLayout = ({ children }: RootLayoutProperties) => (
   <html
     lang="en"
-    className={cn(Apparat.className, fonts, 'scroll-smooth')}
+    className={cn(Apparat.className, 'scroll-smooth')}
     suppressHydrationWarning
   >
     <body>
