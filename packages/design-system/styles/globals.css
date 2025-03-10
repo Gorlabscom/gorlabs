@@ -140,3 +140,61 @@
     rgb(105, 30, 255) 360deg
   );
 }
+
+/* Light mode selection styles */
+::selection {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+::-moz-selection {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+/* Dark mode selection styles */
+  /* .dark
+  ::selection {
+  background: hsl(var(--foreground));
+  color: hsl(var(--primary-foreground));
+}
+
+.dark ::-moz-selection {
+  background: hsl(var(--foreground));
+  color: hsl(var(--primary-foreground));
+} */
+
+/* * view transition api for theme toggle*/
+
+/* biome-ignore lint/nursery/noUnknownPseudoElement: <explanation> */
+/* biome-ignore lint/nursery/noUnknownTypeSelector: <explanation> */
+::view-transition-group(root) {
+  animation-timing-function: var(--expo-out);
+}
+
+/* biome-ignore lint/nursery/noUnknownPseudoElement: <explanation> */
+/* biome-ignore lint/nursery/noUnknownTypeSelector: <explanation> */
+::view-transition-new(root) {
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><filter id="blur"><feGaussianBlur stdDeviation="2"/></filter></defs><circle cx="0" cy="0" r="18" fill="white" filter="url(%23blur)"/></svg>')
+    top left / 0 no-repeat;
+  mask-origin: content-box;
+  animation: scale 1s;
+  transform-origin: top left;
+}
+
+/* biome-ignore lint/nursery/noUnknownPseudoElement: <explanation> */
+/* biome-ignore lint/nursery/noUnknownTypeSelector: <explanation> */
+::view-transition-old(root),
+/* biome-ignore lint/nursery/noUnknownPseudoElement: <explanation> */
+/* biome-ignore lint/nursery/noUnknownTypeSelector: <explanation> */
+.dark::view-transition-old(root) {
+  animation: scale 1s;
+  transform-origin: top left;
+  z-index: -1;
+}
+
+@keyframes scale {
+  to {
+    mask-size: 350vmax;
+  }
+}
