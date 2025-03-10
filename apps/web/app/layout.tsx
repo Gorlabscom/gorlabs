@@ -13,6 +13,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 // import { Header } from './components/Header/index'
 import localFont from 'next/font/local';
+import Script from 'next/script';
 
 const Apparat = localFont({
   src: './fonts/Kmr_apparat_medium.woff2',
@@ -31,13 +32,18 @@ const RootLayout = ({ children }: RootLayoutProperties) => (
     suppressHydrationWarning
   >
     <body>
+      <Script
+        defer
+        src="https://umami.gorlabs.com/script.js"
+        data-website-id="98df0aeb-c3d4-471a-80dc-5baa067d28cf"
+      />
       <DesignSystemProvider>
         <Header />
         {children}
       </DesignSystemProvider>
       <Toolbar />
       {/* <CMSToolbar /> */}
-      <Footer/>
+      <Footer />
     </body>
   </html>
 );
