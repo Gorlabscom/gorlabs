@@ -21,7 +21,7 @@
     "@repo/typescript-config": "workspace:*",
     "@storybook/addon-essentials": "^8.5.3",
     "@storybook/addon-interactions": "^8.5.3",
-    "@storybook/addon-onboarding": "^8.5.3",
+    "@storybook/addon-onboarding": "^8.6.2",
     "@storybook/addon-themes": "^8.5.3",
     "@storybook/blocks": "^8.5.3",
     "@storybook/nextjs": "^8.5.3",
